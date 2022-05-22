@@ -2799,7 +2799,14 @@ console.log(typeof arr[0])*/
 //     return arr
 // }
 // console.log(func(9))
-let sum
-for (let i = 0; i <= 100; i++){
-    sum += i
-}console.log(sum)
+
+// function func(from, to) {
+//     let arr = []
+//     for (let i = from; i <= to; i += 1){
+//         arr.push(i)
+//     }
+//     return arr
+// }
+// console.log(func(2, 12))
+
+
