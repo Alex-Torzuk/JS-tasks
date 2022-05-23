@@ -2809,4 +2809,69 @@ console.log(typeof arr[0])*/
 // }
 // console.log(func(2, 12))
 
+//                        Флаги в функциях JavaScript
+
+// let num = 31;
+
+// let flag = true;
+// for (let i = 2; i < num; i++) {
+//     if (num % i == 0) {
+//
+// 		flag = false;
+// 		break;
+// 	}
+// }
+
+// console.log(flag);
+
+// function isPrime(num) {
+//     let flag = true;
+//     for (let i = 2; i < num; i++) {
+//         if (num % i == 0) {
+//             flag = false;
+//             break;
+//         }
+//     }
+	
+//     return flag;
+// }
+// console.log(isPrime(10));
+// console.log( isPrime(31) );
+
+// function func(arr) {
+//     for (let elem of arr) {
+//         if (elem % 2 !== 0) {
+//             return false
+//         }
+        
+//     }
+//     return true
+// }
+// console.log(func([2, 4, 6, 8]))
+
+// function func(num) {
+//     let arr = []
+//     arr.push(num)
+        
+//     for (let elem of arr) {
+//         if (elem % 2 == 0) {
+//             return false
+//         }
+//     }
+//     return true
+// }
+// console.log(func(555))
+
+// function func(arr) {
+//     for (let i = 0; i < arr.length; i++) {
+//         for (let j = 0; j < i; j++){
+//             if (arr[j] === arr[i]) {
+//                 return true
+//             }
+//         }
+//     }
+//     return false
+
+// }
+// console.log(func([1, 2, 2, 3, 4]))
 
