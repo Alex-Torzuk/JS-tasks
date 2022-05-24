@@ -2875,3 +2875,25 @@ console.log(typeof arr[0])*/
 // }
 // console.log(func([1, 2, 2, 3, 4]))
 
+//  Логические операторы без if в функциях JavaScript
+
+// function func(a, b) {
+// 	if (a == b) {
+// 		return true;
+// 	} else {
+// 		return false;
+// 	}
+// }
+
+function func(a, b) {
+    return a == b
+}
+console.log(func(1, 1))
+
+
+
+
+
+
+
+
