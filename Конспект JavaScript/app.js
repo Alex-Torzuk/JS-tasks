@@ -2885,11 +2885,106 @@ console.log(typeof arr[0])*/
 // 	}
 // }
 
-function func(a, b) {
-    return a == b
-}
-console.log(func(1, 1))
+// function func(a, b) {
+//     return a == b
+// }
+// console.log(func(1, 1))
 
+//              Поиск ошибок в коде с функциями JavaScript
+
+// function func1(num1) {
+// 	return num1
+// }
+// function func2(num2) {
+// 	return num2
+// }
+
+// console.log( func1(3) + func2(5) );
+
+// function sum(arr) {
+// 	let res = 0;
+	
+// 	for (let elem of arr) {
+// 		res += elem;
+		
+//     }
+//     return res;
+// }
+
+// alert(sum([1, 2, 3, 4, 5]));
+
+// function func1() {
+// 	return 3;
+// }
+// function func2() {
+// 	return 5;
+// }
+
+// console.log( func1() + func2() );
+
+// let arr = [1, 2, 3, 4, 5]
+
+// alert(sum(arr));
+
+// function sum(arr) {
+// 	let sum = 0;
+	
+// 	for (let elem of arr) {
+// 		sum += elem;
+// 	}
+	
+// 	return sum;
+// }
+
+// let res = sum([1, 2, 3, 4, 5]);
+// alert(res);
+
+// function sum(arr) {
+// 	let sum = 0;
+	
+// 	for (let elem of arr) {
+// 		sum += elem;
+//     }
+//     return sum
+// }
+
+// function add(num) {
+// 	if (num <= 9) {
+// 		return '0' + num;
+// 	}else{return num}
+// }
+// console.log(add(7))
+
+// let arr = [1, 2, 3, 4, 5];
+// let summ = sum(arr);
+// console.log(summ);
+
+// function sum(arr) {
+// 	let res = 0;
+	
+// 	for (let elem of arr) {
+// 		res += elem;
+// 	}
+	
+// 	return res;
+// }
+
+let num = 12345;
+let res = getDigitsSum(num);
+console.log(res);
+
+function getDigitsSum(num) {
+	let arr = num.split('');
+	let sum = 0;
+	
+	for (let elem of arr) {
+		sum += elem;
+	}
+	
+	return sum;
+} 
+
+// Код должен найти сумму цифр числа:
 
 
 
