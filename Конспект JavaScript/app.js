@@ -2969,24 +2969,19 @@ console.log(typeof arr[0])*/
 // 	return res;
 // }
 
-let num = 12345;
-let res = getDigitsSum(num);
-console.log(res);
+// let num = 12345;
+// let res = getDigitsSum(num);
+// console.log(res);
 
-function getDigitsSum(num) {
-	let arr = num.split('');
-	let sum = 0;
-	
-	for (let elem of arr) {
-		sum += elem;
-	}
-	
-	return sum;
-} 
-
-// Код должен найти сумму цифр числа:
-
-
+// function getDigitsSum(num) {
+// 	let str = String(num)
+// 	let arr = str.split('')
+// 	let sum = 0
+// 	for (let i = 0; i <= arr.length; i += 1) {
+// 		sum += i
+// 	}
+// return sum
+// } 
 
 
 
