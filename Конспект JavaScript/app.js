@@ -2981,7 +2981,75 @@ console.log(typeof arr[0])*/
 // 		sum += i
 // 	}
 // return sum
-// } 
+// }
+
+//    Правильное использование функций JavaScript
+
+// let result = []
+// for (let i = 1; i <= 100; i++) {
+//     if (isPrime(i)) {
+//         result.push(i)
+//     }
+// }console.log(result)
+
+
+// function isPrime(num) {
+// 	for (let i = 2; i < num; i++) {
+// 		if (num % i == 0) {
+// 			return false;
+// 		}
+// 	}
+	
+// 	return true;
+// }
+
+// let result = [];
+// let arr = [1524, 1321, 4563, 7144, 2879];
+
+// for (let elem of arr) {
+// 	if (checkDigitsPairsSum(elem)) {
+// 		result.push(elem);
+// 	}
+// }
+
+// console.log(result);
+
+// function checkDigitsPairsSum(num) {
+// 	let str = String(num);
+// 	let sum1 = Number(str[0]) + Number(str[1]);
+// 	let sum2 = Number(str[2]) + Number(str[3]);
+	
+// 	return sum1 == sum2;
+// }
+let arr = []
+for (let i = 0001; i <= 2030; i += 1) {
+arr.push(i)
+}
+let res = []
+for (let elem of arr) {
+    if (checkDigitsPairsSum(elem)) {
+        res.push(elem)
+    }
+} 
+// доделать!!!!!! задача 2
+
+function checkDigitsPairsSum(num) {
+	let str = String(num);
+	let sum1 = Number(str[0]) + Number(str[1]);
+	let sum2 = Number(str[2]) + Number(str[3]);
+	
+	return sum1 == sum2;
+}
+function getDigitsSum(num) {
+	let sum = 0;
+	let digits = String(num).split('');
+	
+	for (let digit of digits) {
+		sum += Number(digit);
+	}
+	
+	return sum;
+}
 
 
 
