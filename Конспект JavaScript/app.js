@@ -3022,24 +3022,25 @@ console.log(typeof arr[0])*/
 // 	return sum1 == sum2;
 // }
 let arr = []
-for (let i = 0001; i <= 2030; i += 1) {
+for (let i = 1; i <= 2030; i += 1) {
 arr.push(i)
 }
 let res = []
 for (let elem of arr) {
-    if (checkDigitsPairsSum(elem)) {
+    if (getDigitsSum(elem)) {
         res.push(elem)
-    }
+	}
+	console.log(res)
 } 
 // доделать!!!!!! задача 2
 
-function checkDigitsPairsSum(num) {
-	let str = String(num);
-	let sum1 = Number(str[0]) + Number(str[1]);
-	let sum2 = Number(str[2]) + Number(str[3]);
+// function checkDigitsPairsSum(num) {
+// 	let str = String(num);
+// 	let sum1 = Number(str[0]) + Number(str[1]);
+// 	let sum2 = Number(str[2]) + Number(str[3]);
 	
-	return sum1 == sum2;
-}
+// 	return sum1 == sum2;
+// }
 function getDigitsSum(num) {
 	let sum = 0;
 	let digits = String(num).split('');
