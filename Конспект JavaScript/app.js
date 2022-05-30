@@ -3021,36 +3021,32 @@ console.log(typeof arr[0])*/
 	
 // 	return sum1 == sum2;
 // }
-let arr = []
-for (let i = 1; i <= 2030; i += 1) {
-arr.push(i)
-}
-let res = []
-for (let elem of arr) {
-    if (getDigitsSum(elem)) {
-        res.push(elem)
-	}
-	console.log(res)
-} 
-// доделать!!!!!! задача 2
-
-// function checkDigitsPairsSum(num) {
-// 	let str = String(num);
-// 	let sum1 = Number(str[0]) + Number(str[1]);
-// 	let sum2 = Number(str[2]) + Number(str[3]);
+// let arr = []
+// let res = []
+// for (let i = 1; i <= 2030; i += 1) {
+// 	arr.push(i)
 	
-// 	return sum1 == sum2;
 // }
-function getDigitsSum(num) {
-	let sum = 0;
-	let digits = String(num).split('');
+// for (let elem of arr) {
+// 	if (getDigitsSum(elem) == 13) {
+// 		res.push(elem)
+// 	}
+// }
+// console.log(res)
+
 	
-	for (let digit of digits) {
-		sum += Number(digit);
-	}
+
+// function getDigitsSum(num) {
+// 	let sum = 0;
+// 	let digits = String(num).split('');
 	
-	return sum;
-}
+// 	for (let digit of digits) {
+// 		sum += Number(digit);
+// 	}
+	
+// 	return sum;
+// }
+//С помощью приведенной функции getDigitsSum найдите все года от 1 до 2030, сумма цифр которых равна 13.
 
 
 
