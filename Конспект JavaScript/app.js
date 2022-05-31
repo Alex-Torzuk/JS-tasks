@@ -3048,7 +3048,79 @@ console.log(typeof arr[0])*/
 // }
 //С помощью приведенной функции getDigitsSum найдите все года от 1 до 2030, сумма цифр которых равна 13.
 
+// let nums = [123, 456, 789];
+
+// let result = [];
+// for (let num of nums) {
+// 	result.push(String(num).split('').reverse().join(''));
+// }
+
+// console.log(result); // выведет [321, 654, 987]
+
+// let nums = [123, 456, 789]
+// console.log(arrReverse(nums))
+
+// function arrReverse(arr) {
+//     let result = []
+//     for (let num of arr) {
+//         result.push(String(num).split('').reverse().join(''))
+//     }
+//     return result
+// }
+
+// let num1 = 234;
+// let num2 = 531;
+
+// let digits1 = String(num1).split('');
+// let digitsSum1 = 0;
+// for (let digit1 of digits1) {
+// 	digitsSum1 += Number(digit1);
+// }
+
+// let digits2 = String(num1).split('');
+// let digitsSum2 = 0;
+// for (let digit2 of digits2) {
+// 	digitsSum2 += Number(digit2);
+// }
+
+// if (digitsSum1 == digitsSum2) {
+// 	alert('суммы цифр совпадают');
+// } else {
+// 	alert('суммы цифр не совпадают');
+// }
+
+// let num1 = 234;
+// let num2 = 531;
+// if (func(num1) == func(num2)) {
+//     alert('Сумма цифр совпадают!!!')
+// }
+// else { alert('Сумма цифр не совпадают !!') }
 
 
+// function func(comparison) {
+//     let arr = String(comparison).split('')
+//     let sum = 0
+//     for (let elem of arr) {
+//         sum += Number(elem)
+//     }
+//       return sum
+    
+// }
+// let nums = [12, 24, 35, 14];
 
+// for (let num of nums) {
+// 	console.log(num + ': ' + getDivisors(num).join(', '));
+// }
+
+// function getDivisors(num) {
+// 	let result = [];
+	
+// 	for (let i = 2; i < num; i++) {
+// 		if (num % i == 0) {
+// 			result.push(i);
+// 		}
+// 	}
+	
+// 	return result;
+// }
 
