@@ -3170,3 +3170,34 @@ console.log(typeof arr[0])*/
 // }
 // console.log(getDivisors(24))
 
+// let arr = [12, 19, 28, 13, 14, 345];
+// let result = [];
+
+// function inRange(num) {
+// 	let sum = getSum(getDigits(num));
+// 	return sum >= 1 && sum <= 9;
+// }
+
+// function getSum(arr) {
+// 	let sum = 0;
+	
+// 	for (let elem of arr) {
+// 		sum += Number(elem);
+// 	}
+	
+// 	return sum;
+// }
+
+// function getDigits(num) {
+// 	return String(num).split('');
+// }
+
+// for (let elem of arr) {
+// 	if (inRange(elem)) {
+// 		result.push(elem);
+// 	}
+// }
+
+// console.log(result);
+
+
