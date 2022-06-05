@@ -3200,35 +3200,60 @@ console.log(typeof arr[0])*/
 
 // console.log(result);
 
-function isFreindly(num1, num2) {
-	let sum1 = getSum(getOwnDivisors(num1));
-	let sum2 = getSum(getOwnDivisors(num2));
+// function isFreindly(num1, num2) {
+// 	let sum1 = getSum(getOwnDivisors(num1));
+// 	let sum2 = getSum(getOwnDivisors(num2));
 	
-	if (sum1 == num2 && sum2 == num1) {
-		return true;
-	} else {
-		return false;
-	}
-}
-console.log(isFreindly(220, 284))
+// 	if (sum1 == num2 && sum2 == num1) {
+// 		return true;
+// 	} else {
+// 		return false;
+// 	}
+// }
+// console.log(isFreindly(220, 284))
 
-function getOwnDivisors(num) {
-    let arr = []
-    for (let i = 1; i < num; i++) {
-        if (num % i == 0) {
-           arr.push(i)
-        }
-    }
-    return arr
-}
+// function getOwnDivisors(num) {
+//     let arr = []
+//     for (let i = 1; i < num; i++) {
+//         if (num % i == 0) {
+//            arr.push(i)
+//         }
+//     }
+//     return arr
+// }
 
-function getSum(arr) {
-    let sum = 0
-    for (let elem of arr) {
-        sum += elem
-    }
-    return sum
-}
+// function getSum(arr) {
+//     let sum = 0
+//     for (let elem of arr) {
+//         sum += elem
+//     }
+//     return sum
+// }
+
+//  Задача 4, 5 - не решена!!!!
+
+// Пересечение массивов на JavaScript
+
+// let arr1 = [1, 2, 3];
+// let arr2 = [2, 3, 4, 5];
+
+// function getInt(arr1, arr2) {
+// 	let result = [];
+	
+// 	for (let elem of arr1) {
+// 		if (inArray(elem, arr2)) {
+// 			result.push(elem);
+// 		}
+// 	}
+	
+// 	return result;
+// }
+
+// function inArray(elem, arr){
+// 	return arr.indexOf(elem) !== -1;
+// }
+
+// console.log( getInt(arr1, arr2) );
 
 
 
