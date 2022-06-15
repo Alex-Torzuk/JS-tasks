@@ -3257,30 +3257,34 @@ console.log(typeof arr[0])*/
 
 //                                                    Разность массивов на JavaScript
 
-function getDiff(arr1, arr2){
-	let diff1 = getFirstDiff(arr1, arr2);
-	let diff2 = getFirstDiff(arr2, arr1);
+// function getDiff(arr1, arr2){
+// 	let diff1 = getFirstDiff(arr1, arr2);
+// 	let diff2 = getFirstDiff(arr2, arr1);
 	
-	return [].concat( diff1, diff2 );
-}
+// 	return [].concat( diff1, diff2 );
+// }
 
-function getFirstDiff(arr1, arr2){
-	let result = [];
+// function getFirstDiff(arr1, arr2){
+// 	let result = [];
 	
-	for (let elem of arr1) {
-		if (!inArray(elem, arr2)) {
-			result.push(elem);
-		}
-	}
+// 	for (let elem of arr1) {
+// 		if (!inArray(elem, arr2)) {
+// 			result.push(elem);
+// 		}
+// 	}
 	
-	return result;
-}
+// 	return result;
+// }
 
-function inArray(elem, arr){
-	return arr.indexOf(elem) !== -1;
-}
+// function inArray(elem, arr){
+// 	return arr.indexOf(elem) !== -1;
+// }
 
-console.log( getDiff([1, 2, 3], [2, 3, 4, 5]) ); // выведет [1, 4, 5]
+// console.log( getDiff([1, 2, 3], [2, 3, 4, 5]) ); // выведет [1, 4, 5]
+
+// зАКРЕПЛЕНИЕ МАТЕРИАЛЛА
+
+
 
 
 
