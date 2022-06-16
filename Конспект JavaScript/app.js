@@ -3021,6 +3021,9 @@ console.log(typeof arr[0])*/
 	
 // 	return sum1 == sum2;
 // }
+
+
+
 // let arr = []
 // let res = []
 // for (let i = 1; i <= 2030; i += 1) {
@@ -3124,7 +3127,7 @@ console.log(typeof arr[0])*/
 // 	return result;
 // }
 
-//             Комбинация вспомогательных функций JavaScript
+            Комбинация вспомогательных функций JavaScript
 
 // let num = 12345;
 
