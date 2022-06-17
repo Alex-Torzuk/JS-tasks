@@ -3127,7 +3127,7 @@ console.log(typeof arr[0])*/
 // 	return result;
 // }
 
-            Комбинация вспомогательных функций JavaScript
+            // Комбинация вспомогательных функций JavaScript
 
 // let num = 12345;
 
@@ -3171,6 +3171,10 @@ console.log(typeof arr[0])*/
 //     }
 //     return result
 // }
+
+Вспомогательные функции внутри других функций в JavaScript
+
+
 // console.log(getDivisors(24))
 
 // let arr = [12, 19, 28, 13, 14, 345];
