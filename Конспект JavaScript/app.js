@@ -3171,11 +3171,10 @@ console.log(typeof arr[0])*/
 //     }
 //     return result
 // }
-
-Вспомогательные функции внутри других функций в JavaScript
-
-
 // console.log(getDivisors(24))
+
+// Вспомогательные функции внутри других функций в JavaScript
+
 
 // let arr = [12, 19, 28, 13, 14, 345];
 // let result = [];
@@ -3206,6 +3205,8 @@ console.log(typeof arr[0])*/
 // }
 
 // console.log(result);
+
+           Дружественные числа на JavaScript
 
 // function isFreindly(num1, num2) {
 // 	let sum1 = getSum(getOwnDivisors(num1));
