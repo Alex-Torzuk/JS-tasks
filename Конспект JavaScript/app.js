@@ -3206,7 +3206,7 @@ console.log(typeof arr[0])*/
 
 // console.log(result);
 
-           Дружественные числа на JavaScript
+        //    Дружественные числа на JavaScript
 
 // function isFreindly(num1, num2) {
 // 	let sum1 = getSum(getOwnDivisors(num1));
