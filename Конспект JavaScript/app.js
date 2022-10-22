@@ -1336,16 +1336,16 @@ console.log(typeof arr[0])*/
 
 // console.log(result); // выведет {'b': 2, 'd': 4};
 
-// let obj = { 'a': 12, 'b': 21, 'c': 13, 'd': 23, 'e': 17 }
-// let result = {}
-// for (let key in obj) {
-//     if (obj[key] > 10) {
-//         if (
-//             obj[key] < 20
-//         )
-//             result[key] = obj[key]
-//     }
-// } console.log(result)// ВЫБИРАЕМ ОБЪЕКТЫ В ЩБЪЕКТЕ БОЛЬШЕ 10 И МЕНЬШЕ 20
+let obj = { 'a': 12, 'b': 21, 'c': 13, 'd': 23, 'e': 17 }
+let result = {}
+for (let key in obj) {
+    if (obj[key] > 10) {
+        if (
+            obj[key] < 20
+        )
+            result[key] = obj[key]
+    }
+} console.log(result)// ВЫБИРАЕМ ОБЪЕКТЫ В ЩБЪЕКТЕ БОЛЬШЕ 10 И МЕНЬШЕ 20
 
 // let obj = { 'a': 12, 'b': 21, 'c': 13, 'd': 23, 'e': 17 }
 // let result = {}
