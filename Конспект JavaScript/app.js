@@ -1336,16 +1336,16 @@ console.log(typeof arr[0])*/
 
 // console.log(result); // выведет {'b': 2, 'd': 4};
 
-let obj = { 'a': 12, 'b': 21, 'c': 13, 'd': 23, 'e': 17 }
-let result = {}
-for (let key in obj) {
-    if (obj[key] > 10) {
-        if (
-            obj[key] < 20
-        )
-            result[key] = obj[key]
-    }
-} console.log(result)// ВЫБИРАЕМ ОБЪЕКТЫ В ЩБЪЕКТЕ БОЛЬШЕ 10 И МЕНЬШЕ 20
+// let obj = { 'a': 12, 'b': 21, 'c': 13, 'd': 23, 'e': 17 }
+// let result = {}
+// for (let key in obj) {
+//     if (obj[key] > 10) {
+//         if (
+//             obj[key] < 20
+//         )
+//             result[key] = obj[key]
+//     }
+// } console.log(result)// ВЫБИРАЕМ ОБЪЕКТЫ В ЩБЪЕКТЕ БОЛЬШЕ 10 И МЕНЬШЕ 20
 
 // let obj = { 'a': 12, 'b': 21, 'c': 13, 'd': 23, 'e': 17 }
 // let result = {}
@@ -1357,6 +1357,8 @@ for (let key in obj) {
 // } console.log(result)// ВЫБИРАЕМ ОБЪЕКТЫ В ЩБЪЕКТЕ БОЛЬШЕ 10 И МЕНЬШЕ 20
 
 
+
+
 // let obj = { 1: 'пн', 2: 'вт', 3: 'ср', 4: 'чт', 5: 'пт', 6: 'сб', 7: 'вс' }
 // let result = {}
 // for (let key in obj) {
@@ -1364,6 +1366,7 @@ for (let key in obj) {
 //         result[key] = obj[key]
 //     }
 // } console.log(result)// ВЫВОДЯТЬСЯ ТОЛЬКО НЕЧЕТНЫЕ ДНИ НЕДЕЛИ ПО ИХ КЛЮЧУ
+
 
 //------------------------------Изменение объекта в цикле
 
@@ -1374,6 +1377,7 @@ for (let key in obj) {
 // }
 
 // console.log(obj); // выведет {'a': 2, 'b': 4, 'c': 6, 'd': 8, 'e': 10}
+
 
 // let obj = { 'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5 }
 // for (let key in obj) {
@@ -1413,7 +1417,7 @@ for (let key in obj) {
 //     employee5: 500,
 //     employee6: 600,
 //     employee7: 700,
-// }
+//}
 // let up = {}
 // for (let res in obj) {
 //     if (obj[res] <= 400) {
@@ -1425,10 +1429,19 @@ for (let key in obj) {
 
 //----------------- задачаЗадача 3⋕js.Pm.Lp.APF.3
 
-
-
-
 // let obj = { 1: 6, 2: 7, 3: 8, 4: 9, 5: 10 }
+// let k = 0
+// let z = 0
+// for (let key in obj) {
+//     k += +key
+//     z += obj[key]
+// }
+
+// function func(num1, num2) {
+//     return num1 / num2
+// }
+// alert(func(k, z))
+
 
 
 // Найдите сумму ключей этого объекта и поделите ее на сумму значений.
@@ -1442,6 +1455,17 @@ for (let key in obj) {
 // 	6: 281,
 // 	7: 452,
 // }
+// let k = 0
+// let z = 0
+// for (let key in obj) {
+//     k += +key
+//     z += obj[key]
+// }
+// function func(num1, num2) {
+//     return num1 / num2
+// }
+// alert(func(k, z))
+
 
 // let arr1 = [1, 2, 3, 4, 5];
 // let arr2 = [6, 7, 8, 9, 10];
@@ -1547,11 +1571,11 @@ for (let key in obj) {
 // console.log(counter_2)
 
 
-// let arr = ['a', 'b', 'c', 'a', 'a', 'b'];
-// let count = { a: 0, b: 0, c: 0 };
-// for (let elem of arr) {
-//     count[elem] += 1;
-// }console.log(count)
+let arr = ['a', 'b', 'c', 'a', 'a', 'b', 'a'];
+let count = { a: 0, b: 0, c: 0 };
+for (let elem of arr) {
+    count[elem] += 1;
+}console.log(count)
 
 // let arr = ['a', 'b', 'c', 'a', 'a', 'b'];
 // let count = {};
