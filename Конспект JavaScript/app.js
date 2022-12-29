@@ -1571,11 +1571,11 @@ console.log(typeof arr[0])*/
 // console.log(counter_2)
 
 
-let arr = ['a', 'b', 'c', 'a', 'a', 'b', 'a'];
-let count = { a: 0, b: 0, c: 0 };
-for (let elem of arr) {
-    count[elem] += 1;
-}console.log(count)
+// let arr = ['a', 'b', 'c', 'a', 'a', 'b', 'a'];
+// let count = { a: 0, b: 0, c: 0 };
+// for (let elem of arr) {
+//     count[elem] += 1;
+// }console.log(count)
 
 // let arr = ['a', 'b', 'c', 'a', 'a', 'b'];
 // let count = {};
