@@ -3314,8 +3314,385 @@ console.log(typeof arr[0])*/
 
 // console.log( getDiff([1, 2, 3], [2, 3, 4, 5]) ); // выведет [1, 4, 5]
 
-// зАКРЕПЛЕНИЕ МАТЕРИАЛЛА
+//===============================Продвинутая теория на функции=========================
 
+// function func() {
+// 	console.log(num);
+// }
+
+// let num;
+
+// num = 1;
+// func();
+
+// num = 2;
+// func();
+
+//===================Локальные переменные в функциях в JavaScript======================
+
+// function func() {
+// 	let num = 5;
+// 	return num;
+// }
+
+// console.log(num); //ничего не выведет, а выдаст ошибку в консоль
+//------------
+
+// function func() {
+// 	let num = 5;
+// 	return num;
+// }
+
+// console.log(func());
+
+//=================Одинаковые имена переменных в функциях в JavaScript==================
+
+// let num = 1;
+
+// function func() {
+// 	let num = 2;
+//         return console.log(num)
+        
+// }
+// func();// 2
+
+// console.log(num);// 1
+
+//=================Изменение глобальных переменных в JavaScript==================
+
+// let num = 1;
+
+// function func() {
+// 	num = 2;
+// }
+// func();
+
+// console.log(num);// 2
+//------------
+
+
+// let num = 1;
+
+// function func() {
+// 	num++;
+// }
+
+// func();
+// func();
+// func();
+// console.log(num);// 4
+//------------
+
+
+// let num = 1;
+
+// function func() {
+// 	let num = 2;
+// }
+
+// console.log(num);// 1
+// func(); ничего
+//------------
+
+
+// function func() {
+// 	num = 2;
+// }
+
+// let num = 1;
+// console.log(num); // 1
+// func();
+//------------
+
+// function func() {
+// 	num = 2;
+// }
+
+// let num = 1;
+// func();
+// console.log(num);// 2
+
+//=================Глобальные переменные и параметры функций в JavaScript================
+
+// function func(localNum) {
+// 	console.log(num); // выведет 1
+// 	console.log(localNum); // выведет 1
+// }
+
+// let num = 1;
+// func(num);
+//------------
+
+// function func(localNum) {
+// 	console.log(localNum);
+// }
+
+// let num = 1;
+// func(num);// 1
+//------------
+
+// function func(localNum) {
+// 	return localNum + localNum;
+// }
+
+// let num = 1;
+// let a = func(num);
+// console.log(a)
+// console.log(num);
+
+//=================Совпадение имен с параметрами в JavaScript================
+
+// function func(num) {
+// 	num = 2; // меняем локальную переменную
+// }
+
+// let num = 1;
+// func(num);
+// console.log(num); // выведет 1 - ничего не поменялось
+
+
+
+//=================Параметры-объекты JavaScript================
+
+// function func(arr) {
+// 	arr[0] = 'Hello';
+// }
+
+// let arr = [1, 2, 3];
+// func(arr);
+// console.log(arr); // выведет ['!', 2, 3]
+//------------
+
+// function func(arg) {
+// 	return arg = 'Hello world';
+         
+// }
+
+// let obj = {a: 1, b: 2, c: 3};
+// obj.a = func()
+
+// console.log(obj);
+//------------
+
+// function func(obj) {
+// 	obj.a = '!';
+// }
+
+// let obj = {a: 1, b: 2, c: 3};
+// func(obj);
+// console.log(obj);
+//-----------
+// function func(arr) {
+// 	arr.splice(1, 1);
+// }
+
+// let arr = [1, 2, 3];
+// func(arr);
+// console.log(arr);// [1, 3]
+
+//------------
+
+// function func(arr) {
+// 	arr.slice(1, 1);
+// }
+
+// let arr = [1, 2, 3];
+// func(arr);
+// console.log(arr);//[1, 2, 3]
+//------------
+
+// function func(arr1) {
+// 	let newArr = arr1;
+// 	newArr[0] = 'I would like a cup of coffee';
+        
+// }
+
+// let arr = [1, 2, 3];
+// func(arr);
+// console.log(arr);
+
+//=================Исходный код функции и ее результат в JavaScript================
+
+// function func() {
+// 	return '!';
+// }
+
+// console.log(func); // увидим код функции
+
+//=================Функция как переменная в JavaScript================
+
+// function func() {
+//         return 'Hello World'
+// }
+// alert(func)
+// func = 123
+// console.log(func)
+
+//=================Запись функции в другую переменную================
+
+// function func1() {
+//         return 123
+// }
+
+// console.log(func1())// 123
+
+// const func2 = func1
+// console.log(func2) // ƒ func1() {return 123}
+
+//=================Присваивание функций в переменные при создании================
+
+// const func1 = () => 1
+// const func2 = () => 2
+// alert(func1() + func2())
+
+//  Cледует придерживаться правила, общего для всех языков программирования: 
+//  функции должны быть глаголами, а переменные - существительными
+
+//===============Function expression и Function declaration в JavaScript================
+
+
+//=============Function declaration
+// declaration()// Обращаемся к функции до ее объявления
+
+// function declaration() {
+//         console.log('Hello')
+// }
+//-----------------
+
+//============Function expression
+// console.log(expression())// выдаст ошибку
+// const expression = function () {
+//         console.log('Hello')
+// }
+
+//===============Массив с анонимными функциями в JavaScript================
+
+// let arr = [
+// 	function() {console.log('1')},
+// 	function() {console.log('2')},
+// 	function() {console.log('3')},
+// ];
+
+// arr[0]()
+
+//-----------------
+
+// let arr = [
+// 	function() {return 1},
+// 	function() {return 2},
+// 	function() {return 3},
+// ];
+
+// for (let func of arr) {
+// 	console.log(func()); // вызываем наши функции в цикле
+// }
+//-----------
+
+
+// let arr = [
+// 	function() {return 1},
+// 	function() {return 2},
+// 	function() {return 3},
+// ];
+// console.log(arr[2]())// 3
+//-----------
+
+// let arr = [
+//         	function() {return 1},
+//         	function() {return 2},
+//         	function() {return 3},
+//         ];
+//         console.log(arr[0]() + arr[1]() + arr[2]())// 6
+
+
+//===============Объект с анонимными функциями в JavaScript================
+
+// let obj = {
+// 	func1: function() {return 1},
+// 	func2: function() {return 2},
+// 	func3: function() {return 3},
+// };
+
+// console.log(obj.func1() + obj.func2() + obj.func3()) // 6
+
+//-----------
+
+// let obj = {
+// 	func1: function() {return 1},
+// 	func2: function() {return 2},
+// 	func3: function() {return 3},
+// };
+
+// for (func in obj){
+//         console.log(func) // func1  func2  func3
+// }
+//------------
+
+// let math = {
+//         add: function(arr) {
+//                 let res = 0
+//                 for (elem of arr){
+//                         res += elem
+//                 }
+//                 return res
+//         },
+// 	square: function(arr) {
+//                 let res = 1
+//                 for (let elem of arr){
+//                         res *= elem
+//                 }
+//                 return res
+//         },
+// 	cube: function(arr) {
+//                 let res = 1
+//                 for (let elem of arr){
+//                         res *= elem * elem 
+//                 }
+//                 return res 
+//         },
+// };
+
+// const res = math.add([2, 2, 2])
+// console.log('add', res) // 6
+
+// const res2 = math.square([2, 2, 2])
+// console.log('square' ,res2)// 8
+
+// const res3 = math.cube([2, 2, 2])
+// console.log('cube' ,res3)// 64
+
+//===============Передача функций параметрами в JavaScript================
+
+// function  test(thisOne, thisTwo, thisThree){
+//       console.log(thisOne + thisTwo + thisThree)
+//       console.log()
+//       console.log()
+// }
+
+// test(
+//         function(){return 1}(),
+//         function(){return 2}(),  
+//         function(){return 3}() // 6
+// )
+
+//-----------------
+
+// const num = test(function () {
+// 	return 3;
+// },
+// function () {
+// 	return 3;
+// }
+// );
+
+// function test(func1, func2) {
+// 	alert(func1(3) + func2(3));
+// }
+//===============Передадим и число параметром================
+
+
+  
+  
 
 
 
