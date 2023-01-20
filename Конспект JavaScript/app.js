@@ -3690,14 +3690,593 @@ console.log(typeof arr[0])*/
 // }
 //===============Передадим и число параметром================
 
+// function test(num, func) {
+//         console.log(func(num))
+// }
 
+// test(10, function(num){
+//         return num * num
+// }) //100
+//--------------
+
+// function test(num, func1, func2) {
+// 	return console.log(func1(num) + func2(num));
+// }
+
+// test(2, function(func1){
+//         return func1 * func1
+// },
+// function(func2){
+//         return func2 ** func2
+// })// 8
+//---------------
+
+// const arr = [1, 2, 3, 4]
+
+// function arrey(arr, func){
+//         for(let i = 0; i < arr.length; i++){
+//                arr[i] = func(arr[i])
+//         }
+//         return arr
+// }
+
+// let result = arrey(arr, function (elem){
+//         return elem ** elem
+// })
+
+// console.log(result) //[1, 4, 27, 256]
+
+//===============Вложенные функции в JavaScript================
+
+// function func(num1, num2) {
+//         function squart(num){
+//         return num * num
+//         }
+//         function square(num){
+//             return    num ** num
+//         }
+//         return squart(num1) + square(num2)
+// }
+
+// console.log(func(2, 3))
+
+//===============Область видимости вложенных функций в JavaScript================
+
+
+// let num = 1; // глобальная переменная
+
+// function test() {
+// 	function func() {
+// 		console.log(num); // выведет 1
+// 	}
+	
+// 	func(); // вызываем внутреннюю функцию
+// };
+
+// test(); // вызываем внешнюю функцию
+//--------------------
+
+
+// function test() {
+// 	let num = 1;
+	
+// 	function func() {
+// 		console.log(num);
+// 	}
+	
+// 	func();
+// }
+
+// test(); // 1
+//-------------------
+
+// function test() {
+// 	let num;
+	
+// 	function func() {
+// 		console.log(num);
+// 	}
+	
+// 	num = 1
+// 	func();
+	
+// 	num = 2
+// 	func();
+// }
+
+// test();// 1   // 2
+//-------------
+
+// function test(num) {
+// 	function func() {
+// 		console.log(num); // выведет 1
+// 	}
+	
+// 	func(); // вызываем внутреннюю функцию
+// };
+
+// test(1); // передаем параметром число
+//-----------------
   
-  
+// function test(num1, num2) {
+// 	function func() {
+// 		console.log(num1 + num2);
+// 	}
+	
+// 	num1 = 2;
+// 	func();
+// }
+
+// test(1, 2); // 4
+//------------------
+
+// function test(num) {
+// 	function func(localNum) {
+// 		console.log(num); // выведет 1
+// 		console.log(localNum); // выведет 1
+// 	}
+	
+// 	func(num);
+// }
+
+// test(1);
+
+//--------------
+
+// function test(num) {
+// 	function func(localNum) {
+// 		console.log(localNum);
+// 	}
+	
+// 	func(num + 1);
+// }
+
+// test(1); // 2
+
+//--------------
+
+// function test(num) {
+// 	function func(localNum) {
+// 		console.log(num);
+// 	}
+	
+// 	func(num + 1);
+// }
+
+// test(1);// 1
+
+//------------------
+
+// function test(num) {
+// 	function func(localNum) {
+// 		localNum = 2;
+//                 console.log(localNum)
+
+// 	}
+	
+// 	func(num);
+// 	//console.log(num);
+// }
+
+// test(1);
+//-----------------
+
+// function test(num) {
+// 	function func(localNum) {
+// 		num = 5;
+// 	}
+	
+// 	func(num);
+// 	console.log(num);
+// }
+
+// test(3);// 5
+//---------------------
+
+// function test(num) {
+// 	function func(localNum) {
+// 		localNum = 2;
+// 	}
+	
+// 	func(num);
+// 	console.log(localNum);
+// }
+
+// test(1);// localNum is not defined
+
+//===============Функция, возвращающая функцию в JavaScript================
+
+// function func() {
+// 	return function() {
+// 		return '!';
+// 	};
+// }
+
+// console.log( func()() ); // выведет '!'
+//---------------
+
+// function func1(){
+//        return function(){
+//         return 1
+//        } 
+// }
+
+// function func2(){
+//         return function(){
+//          return 2
+//         } 
+//  }
+
+//  function result(res1, res2){
+//         return res1 + res2
+//  }
+
+//  console.log(result(func1()(), func2()())) // 3
+//----------------
+
+// function func(){
+//         return function(){
+//                 return function(){
+//                         return function(){
+//                                 return function(){
+//                                         return function(){
+//                                                 return 'I would like a cup of coffee'
+//                                         }
+//                                 }
+//                         }
+//                 }
+//         }
+// }
+
+// console.log(func()()()()()()) // I would like a cup of coffee
+
+//--------------Параметры
+
+// function func() {
+// 	return function(num) {
+// 		return num;
+// 	};
+// }
+
+// console.log( func()(5) ); // выведет 5
+//--------------
+
+// function func(num1){
+//         return function(num2){
+//                 return function(num3){
+//                         return num1 + num2 + num3
+//                 }
+//         }
+// }
+
+// console.log(func(2)(3)(4)) // 9
+//---------------
+
+// function func(num1){
+//         return function(num2){
+//                 return function(num3){
+//                         return function(num4){
+//                                 return function(){
+//                                         let arr = [num1, num2, num3, num4]
+//                                         return arr
+//                                 }
+//                         }
+                        
+//                 }
+//         }
+// }
+
+// console.log(func(2)(3)(4)(5)()) // 9
+
+//===============Лексическое окружение функций в JavaScript================
 
 
+// function test() {
+// 	let num1 = 1;
+// 	let num2 = 2;
+	
+// 	return function() {
+// 		return num1 + num2;
+// 	}
+// }
+
+// //let func = test();
+// console.log(test()());
+
+//-----------------
+
+// function test() {
+// 	let num1 = 1;
+	
+// 	return function() {
+// 		return num1 + num2;
+// 	}
+// }
+
+// let num2 = 2;
+// let func = test();
+// console.log(func());// 3
+//---------------
+
+// function test() {
+// 	let num = 1;
+	
+// 	return function() {
+// 		return num;
+// 	}
+// }
+
+// let num = 2;
+// let func = test();
+// console.log(func());// 1
+
+//===============Замыкания в JavaScript================
+
+// function func(){
+//         let num = 1
+//         return function funElon(){
+//                 console.log(num)
+//                 num++
+//         }
+// }
+
+// let res = func()
+
+// res() //1
+// res() //2
+// res() //3
+//-------------------
+
+// s
+//-----------------------
+
+// function test() {
+// 	let counter = 0;
+	
+// 	return function() {
+// 		return function() {
+// 			console.log(counter);
+// 			counter++;
+// 		};
+// 	};
+// };
+
+// let func = test();
+
+// let func1 = func();
+// let func2 = func();
+// func1();
+// func2();
+// func1();
+// func2();
+
+//===============Вызов функции на месте в JavaScript================
+
+// !function(){
+//         console.log('Hello World')
+// }()
+//---------------
+
+// let result = function() {
+//         return 'Hello World'
+// }()
+// console.log(result)
+//---------------
+
+// let result = function() {return 1;}() + function() {return 2;}();
+// console.log(result);// 3
+//--------------
+
+// (function() {
+// 	console.log('!');
+// })();
+//----------------
+
+// let result = (function() {
+// 	return '!';
+// }());
+
+// console.log(result);
+//----------
+
+// let result = (function() {
+// 	return '!';
+// })();
+
+// console.log(result);
+//-----------
+
+// (function(num1, num2) {
+// 	console.log(num1 + num2);
+// })(1, 2); // 3
+//----------
+
+// (function() {
+// 	return () => {
+//                 return() => {
+//                         console.log('Hello')
+//                 }
+//         }
+// })()()();
+//--------------
+
+// (function(num1) {
+// 	return function(num2){
+//                 console.log(num1 + num2)
+//         }
+// })(1)(2);// 6
+//--------------
+
+// (function(num1) {
+// 	return (num2)=>{
+//                 return(num3)=>{
+//                         console.log(num1 + num2 + num3)
+//                 }
+//         }
+// })(1)(2)(3); //6
+//------------------
+
+// let result = 1
+// +function() {
+// 	return 2;
+// }();
+
+// console.log(result);
+//----------------------
+
+// let num = 1
+// ;(function() {
+// 	console.log(num); // выдаст ошибку
+// })();
+//------------------
+
+// let str = 'str';
+
+// (function() {
+// 	console.log(1);
+// })(); // 1
+//---------
+
+// let str = 'str'
+
+// (function() {
+// 	console.log(1);
+// })();// "str" is not a function
+//--------------
+
+// let func = (function(){
+//         let num = 1
+//         return function(){
+//                 console.log(num)
+//                 num++
+//         }
+// })()
+// func()//2
+// func()// 2
+
+// let func = (function(){
+//         let a = 1
+//         return function () {
+//                 console.log(a)
+//                 if (a >= 5) {
+//                         a = -1
+//                         a++
+//                 }
+//                 a++
+//         }
+// })()
+// func()
+// func()
+// func()
+// func()
+// func()
+// func()
+// func()
+// func()
+// func()
+// func()
+// func()
+
+//---------------
+
+// function test() {
+// 	let num = 1;
+	
+// 	return function() {
+// 		console.log(num);
+// 		num++;
+// 	}
+// }
+
+// let func = test();
+
+// func(); //выведет 1
+// func(); //выведет 2
+// func(); //выведет 3
+// func(); //выведет 4
+// func(); //выведет 5
+
+//===============Функции-коллбэки в JavaScript================
+
+// function each(arr, callback){
+//         let result  = []
+//         for(let elem of arr){
+//                 result.push(callback(elem))
+//         }
+//         return result
+// }
+
+// let result = each([1, 2, 3, 4, 5], function(elem){
+//         return elem * 2
+// })
+// console.log(result)
+//-----------------------
+
+// function each(arr, callback){
+//         let result  = []
+//         for(let i = arr.length-1; i >= 0; i--){
+//                 result.push(callback(arr[i]))
+//         }
+//         return result
+// }
+
+// let result = each(['a', 'b', 'c', 'd', 'e', 'f'], function(elem){
+//         return elem
+// })
+// console.log(result)// ['f', 'e', 'd', 'c', 'b', 'a']
+//---------------------
+
+// function each(arr, square) {
+//         let result = []
+//         for(let elem of arr){
+//                 result.push(square(elem))
+//         }
+//         return result
+	
+// }
+// let result = each([1, 2, 3, 4, 5], function square(num) {
+//         return num ** 3;
+// });
+// console.log(result);//[1, 8, 27, 64, 125]
 
 
+//===============Стрелочные функции в JavaScript================
 
+// function every(arr, callback){
+//         let result = []
+//         for(let elem of arr){
+//                 result.push(callback(elem))
+//         }
+//         return result
+// }
 
+// let result = every([1, 2, 3, 4, 5], (elem) => elem > 0)
+	
 
+// console.log(result)
+//---------------
 
+// function every(arr, callback){
+//         let result = []
+//         for(let i = 0; i < arr.length; i++){
+//                 result.push(callback(arr[i]))
+//         }
+//         return result
+// }
+
+// let result = every([1, 2, 3, 4, 5], (elem, index) => elem * index > 10)
+// console.log(result)
+
+//===============Работа с рекурсией в JavaScript================
+
+let i = 1;
+
+function func(){
+	console.log(i);
+	i++;
+	
+	if (i <= 10){
+		func(); // здесь функция вызывает сама себя
+	}
+}
+func();
