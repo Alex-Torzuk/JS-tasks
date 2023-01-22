@@ -4269,14 +4269,125 @@ console.log(typeof arr[0])*/
 
 //===============Работа с рекурсией в JavaScript================
 
-let i = 1;
+// let i = 1;
 
-function func(){
-	console.log(i);
-	i++;
+// function func1(){
+// 	console.log(i);
+// 	i++;
 	
-	if (i <= 10){
-		func(); // здесь функция вызывает сама себя
+// 	if (i <= 5){
+// 		func1(); // здесь функция вызывает сама себя
+// 	}
+// }
+// func1();
+//----------
+
+// function func(arr) {
+// 	console.log(arr.shift()); // выведет 1
+// 	console.log(arr); // выведет [2, 3] - массив уменьшился
+	
+// 	console.log(arr.shift()); // выведет 2
+// 	console.log(arr); // выведет [3] - массив уменьшился
+	
+// 	console.log(arr.shift()); // выведет 3
+// 	console.log(arr); // выведет [] - массив пуст
+// }
+
+// func([1, 2, 3]);
+//------------------
+
+// function func(arr) {
+// 	console.log(arr.shift(), arr);
+	
+// 	if (arr.length != 0) {
+// 		func(arr);
+// 	}
+// }
+
+// func([1, 2, 3]);
+//-------------
+
+// let arr = [1, 2, 3, 4, 5];
+// function func(arr){
+	
+// 	console.log(arr)
+	
+// }
+// func(arr)
+//---------------
+
+// function getSum(arr) {
+// 	let sum = arr.shift();
+// 	console.log(sum)
+	
+// 	if (arr.length !== 0) {
+// 		sum += getSum(arr);
+// 	}
+	
+// 	return sum;
+// }
+
+// console.log(getSum([1, 2, 3]));
+
+//--------------
+
+// let arr = [1, 2, 3, 4, 5];
+// function getSum(arr){
+// 	let sum = arr.shift()
+// 	console.log('This is sum -',sum)
+// 	if(arr.length != 0){
+		
+// 		sum += getSum(arr)
+
+// 	}
+// 	return sum
+// }
+
+// console.log('Сумма всех чисел -', getSum(arr))// 15
+//------------
+
+// function func(arr) {
+// 	for (let elem of arr) {
+// 		console.log(elem);
+// 	}
+// }
+
+// func([1, [2, 7, 8], [3, 4, [5, [6, 7]]]]);
+
+//--------
+
+function func(arr) {
+	let newArr = []
+	for (let elem of arr) {
+		if (typeof elem == "object") {
+			func(elem);
+			newArr.push(arr)
+			// элемент - массив
+		} else {
+			// элемент - примитив
+			console.log('',elem);
+			
+		}
 	}
+	return newArr
 }
-func();
+
+let result = func([1, [2, 7, 8], [3, 4, [5, [6, 7]]]]);
+console.log(result)
+//-------------
+
+// function func(obj) {
+// 	for (let key in obj) {
+// 		if (typeof key == "object") {
+// 			func();
+// 			// элемент - массив
+// 		} else {
+// 			// элемент - примитив
+// 			console.log('Hello',key);
+// 		}
+// 	}
+// }
+
+// func({a: 1, b: {c: 2, d: 3, e: 4}, f: {g: 5, j: 6, k: {l: 7, m: {n: 8, o: 9}}}});
+
+
