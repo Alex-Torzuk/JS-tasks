@@ -4556,17 +4556,17 @@ console.log(typeof arr[0])*/
 
 //--------
 
-let arr = [2, 4, 6, 8, 9];
+// let arr = [2, 4, 6, 8];
 
-let result = arr.every(elem => elem >= 0);
-console.log(result);// true
+// let result = arr.every(elem => elem >= 0);
+// console.log(result);// true
 
 //===============Метод some для проверки массива в JavaScript================
 
 // let arr = [2, 4, 6, 8, 9];
 
 // let result = arr.some(elem => elem % 2 == 0);
-// console.log(result);// true
+// console.log(result);// true есть хотя бы одно число
 
 
 
