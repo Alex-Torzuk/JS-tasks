@@ -4309,8 +4309,10 @@ console.log(typeof arr[0])*/
 
 // let arr = [1, 2, 3, 4, 5];
 // function func(arr){
-	
-// 	console.log(arr)
+// 	console.log(arr.shift(), arr);
+// 	if (arr.length != 0){
+// 		func(arr);
+// 	}
 	
 // }
 // func(arr)
@@ -4354,40 +4356,217 @@ console.log(typeof arr[0])*/
 
 // func([1, [2, 7, 8], [3, 4, [5, [6, 7]]]]);
 
-//--------
+// //--------
 
-function func(arr) {
-	let newArr = []
-	for (let elem of arr) {
-		if (typeof elem == "object") {
-			func(elem);
-			newArr.push(arr)
-			// элемент - массив
-		} else {
-			// элемент - примитив
-			console.log('',elem);
+// function func(arr) {
+	
+// 	for (let elem of arr) {
+		 
+// 		if (typeof elem === 'object') {
+// 			func(elem);
 			
-		}
-	}
-	return newArr
-}
-
-let result = func([1, [2, 7, 8], [3, 4, [5, [6, 7]]]]);
-console.log(result)
-//-------------
-
-// function func(obj) {
-// 	for (let key in obj) {
-// 		if (typeof key == "object") {
-// 			func();
-// 			// элемент - массив
 // 		} else {
-// 			// элемент - примитив
-// 			console.log('Hello',key);
+// 			console.log(elem)
 // 		}
 // 	}
 // }
 
-// func({a: 1, b: {c: 2, d: 3, e: 4}, f: {g: 5, j: 6, k: {l: 7, m: {n: 8, o: 9}}}});
+// func([1, [2, 7, 8], [3, 4, [5, [6, 7]]]]);
+// //-------------
+
+// // function func(obj) {
+// // 	for (let key in obj) {
+		
+// // 				if (typeof key == 'object') {
+					
+// // 			func(key);
+// // 		} else {
+// // 			console.log(key);
+// // 		}
+// // }
+// // }
+
+// // func({a: 1, b: {c: 2, d: 3, e: 4}, f: {g: 5, j: 6, k: {l: 7, m: {n: 8, o: 9}}}});
+// // a b f
+//------------
+
+//===============Метод map для перебора массива в JavaScript================
+
+// let arr = [1, 2, 3, 4, 5];
+
+// let result = arr.map(function(elem) {
+// 	return elem * elem;
+// });
+
+// console.log(result); // выведет [1, 4, 9, 16, 25]
+//---------------------
+
+// let arr = [1, 2, 3, 4, 5];
+// let result = arr.map(function(elem){
+// 	return elem * 2
+// })
+
+// console.log(result)// [2, 4, 6, 8, 10]
+
+//-------------
+
+// let arr = ['Hello', 'world', 'how', 'are', 'you']
+
+// let result = arr.map(function(elem){
+// 	return elem += '!'
+	
+	
+// })
+// console.log(result) //['Hello!', 'world!', 'how!', 'are!', 'you!']
+
+//--------------
+
+// let arr = ['Hello', 'world', 'how', 'are', 'you']
+
+// let result = arr.map(function(elem){
+// 	return elem.split('').reverse().join('')
+// })
+
+// console.log(result)// ['olleH', 'dlrow', 'woh', 'era', 'uoy']
+
+//-------------
+
+// let arr = ['123', '456', '789'];
+
+// let result = arr.map(function(elem){
+// 	return Array(elem)
+// })
+// console.log(result) // ['123'], ['456'], ['789']
+
+//--------------
+
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+
+// let result = arr.map(function(elem, index) {
+// 	return elem + index;
+// });
+
+// console.log(result); // выведет ['a0', 'b1', 'c2', 'd3', 'e4']
+
+//-------------
+
+// let arr = [123, 22, 43, 54]
+// let result = arr.map(function(elem, index){
+// 	return elem * index
+// })
+
+// console.log(result) //[0, 22, 86, 162]
+
+//------------
+
+// let arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+
+// let result = arr.map(function(elem) {
+// 	console.log(elem);//[1, 2, 3], [4, 5, 6], [7, 8, 9]
+// });
+
+//-------------
+
+// let arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+
+// let result = arr.map(function(elem) {
+// 	return elem.map(function(num) {
+// 		return num * num;
+// 	});
+// });
+
+// console.log(result);
+
+//===============Метод forEach для перебора массива в JavaScript================
+
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+
+// arr.forEach(function(elem) {
+// 	document.write(elem + '<br>');
+// });
+
+//----------------
+
+// let arr = ['a', 'b', 'c', 'd', 'e'];
+
+// arr.forEach(function(elem, index) {
+// 	document.write(index + '. ' + elem + '<br>');
+// });
+
+//----------
+
+// let arr = [1, 2, 3, 4, 5];
+// let sum = 0;
+
+// arr.forEach(function(elem) {
+// 	sum += elem;
+// });
+
+// console.log(sum);
+
+//===============Метод filter для фильтрации массива в JavaScript================
+
+// let arr = [1, 2, 3, 4, 5];
+
+// console.log(arr.filter((elem) => elem % 2 != 0));
+
+ // выведет [2, 4]
+
+//-----------------
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+// console.log(arr.filter(function(elem){
+// 	return elem <= 10
+// }))// [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+//---------------
+
+// let arr = ['i', 'would', 'like', 'a', 'cup', 'of', 'coffee'] 
+
+// console.log(arr.filter(function(elem){
+// 	return elem.length >= 5 
+	
+// }))// ['would', 'coffee']
+
+//-------
+
+// let arr = [3, 4, 5, 6, 7, 8, 9, 10]
+
+// console.log(arr.filter(function(elem){
+// 	 return elem * elem <= 30
+// })) //[3, 4, 5]
+
+//--------------
+
+// let arr = [1, 2, [3, 4], 5, [6, 7]]
+// let newArr = []
+// console.log(arr.filter((elem) =>  elem))// [1, 2, Array(2), 5, Array(2)]
+
+//-------------
+
+// let arr = [1, 2, 3, 4, 5];
+// console.log( arr.filter(elem => elem % 2 == 0).length );// количество полож. эл - 2
+
+//===============Метод every для проверки массива в JavaScript================
+
+// let arr = [2, 4, 6, 8];
+
+// let result = arr.every(elem => elem % 2 == 0);
+// console.log(result);// true
+
+//--------
+
+let arr = [2, 4, 6, 8, 9];
+
+let result = arr.every(elem => elem >= 0);
+console.log(result);// true
+
+//===============Метод some для проверки массива в JavaScript================
+
+// let arr = [2, 4, 6, 8, 9];
+
+// let result = arr.some(elem => elem % 2 == 0);
+// console.log(result);// true
+
 
 
