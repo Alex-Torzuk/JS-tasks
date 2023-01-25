@@ -4568,5 +4568,289 @@ console.log(typeof arr[0])*/
 // let result = arr.some(elem => elem % 2 == 0);
 // console.log(result);// true есть хотя бы одно число
 
+//===============Оператор spread в JavaScript================
+
+// let arr = [1, 2, 3, 4, 5];
+// function func(num1, num2, num3, num4, num5) {
+// 	return num1 + num2 + num3 + num4 + num5;
+// }
+
+// console.log(func(...arr))// 15
+
+//---------------
+
+// function func(n1, n2, n3, n4, n5, n6, n7, n8) {
+// 	return (n1 + n2 + n3 + n4) * (n5 + n6 + n7 + n8);
+// }
+
+// console.log( func(1, ...[2, 3, 4], 5, ...[6], ...[7, 8]) );// 260
+
+//-----------
+
+// let max = Math.max(1, 2, 3, 4, 12, 5)
+// console.log(max)//12
+
+//-----------
+
+// let arr = [1, 2, 3, 4, 5]
+// let max = Math.max(...arr);
+// console.log(max) // 5
+
+//------------
+
+// let arr = [1, 2, 3, 4, 5]
+// let min = Math.min(...arr)
+// console.log(min) // 1
+
+//===============Оператор spread и слияние массивов================
+
+// let arr1 = ['a', 'b', 'c'];
+// let arr2 = [1, ...arr1, 2, 3];
+
+// console.log(arr2); // выведет [1, 'a', 'b', 'c', 2, 3]
+
+//--------------
+
+// let arr1 = [1, 2, 3];
+// let arr2 = [...arr1, 4, 5, 6];
+
+// let arr  = ['a', 'b', 'c', ...arr2];
+// console.log(arr); //['a', 'b', 'c', 1, 2, 3, 4, 5, 6]
+
+//---------------
+
+// let arr = [...'12345'];
+// console.log(arr); //['1', '2', '3', '4', '5']
+
+//-------------
+
+// let arr = [...'12345', ...'56789'];
+// console.log(arr); //['1', '2', '3', '4', '5', '5', '6', '7', '8', '9']
+
+//===============Оператор rest в JavaScript================
+
+// func(1, 2, 3, 4, 5);
+
+// function func(a, b, ...rest) {
+// 	console.log(a);    // выведет 1
+// 	console.log(b);    // выведет 2
+// 	console.log(rest); // выведет [3, 4, 5]
+// }
+
+//-------------
+
+// function func(...rest){
+//         let sum = 0
+//         for(let elem of rest){
+//                 sum += elem
+//         }
+//         return sum
+// }
+
+// console.log(func(1, 2, 3, 4, 5)) // 15
+
+//-------------
+
+// function unite(...arrs) {
+// 	return arrs;
+// }
+
+// let result = unite([1, 2, 3], [4, 5, 6], [7, 8, 9]);
+// console.log(result); // выведет [ [1, 2, 3,] [4, 5, 6], [7, 8, 9] ]
+
+//---------------
+
+// function merge(...arrs) {
+// 	return [].concat(...arrs);
+// }
+
+// let result = merge([1, 2, 3], [4, 5, 6], [7, 8, 9]);
+// console.log(result); // выведет [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+//===============Деструктуризация массивов в JavaScript================
+
+// let arr = ['John', 'Smit', 'development', 'programmer', 2000];
+
+// let [name, surname, department, position, salary] = arr
+// console.log(name)// John
+// console.log(surname)// Smit
+// console.log(department)// development
+// console.log(position)// programmer
+// console.log(salary)//2000
+
+//---------------
+// function func() {
+// 	return ['John', 'Smit', 'development', 'programmer', 2000];
+// }
+
+// let [name, surname, department, position,salary] = func()
+
+// console.log(name)
+// console.log(surname)// Smit
+// console.log(department)// development
+// console.log(position)// programmer
+// console.log(salary)//2000
+
+//--------------
+
+// let arr = ['John', 'Smit', 'development', 'programmer', 2000];
+// let [, , department, position, ] = arr
+// console.log(department) //development
+// console.log(position) // programmer
+
+//---------------
+
+// let arr = ['John', 'Smit', 'development', 'programmer', 2000];
+// let[name, surname, ...arr1] = arr
+// console.log(name)
+// console.log(surname)
+// console.log(arr1) 
+
+//--------------
+
+// let arr = [2025, 12, 31];
+// let [year, month, day = 1] = arr;
+
+// console.log(year);  // выведет 2025
+// console.log(month); // выведет 12
+// console.log(day);   // выведет 31
+
+//------------
+
+// function func() {
+// 	return (new Date).getDate();
+// }
+// let arr = [2023, 01, ]
+// let [year, month, day = func()] = arr;
+
+
+// console.log(year) //2023
+// console.log(month) //1
+// console.log(day)// 25
+
+//===============Деструктуризация объектов в JavaScript================
+
+// let options = {
+// 	color: 'red',
+// 	width:  400,
+// 	height: 500,
+// };
+
+// let {color, width, height} = options
+// console.log(color)
+// console.log(width)
+// console.log(height)
+
+//---------
+
+// let options = {
+// 	color: 'red',
+// 	width:  400,
+// 	height: 500,
+// };
+// let {color: c, width: w, height: h} = options
+
+// console.log(c)
+// console.log(w)
+// console.log(h)
+
+//------------
+
+// let options = {
+// 	width:  400,
+// 	height: 500,
+// };
+
+// let {color = 'black', width, height} = options
+
+// console.log(color)
+// console.log(width)
+// console.log(height)
+
+//-----------
+
+// let options = {
+// 	width:  400,
+// 	height: 500,
+// };
+
+// let {color: c = 'yellow', width, height} = options
+
+// console.log(c)
+// console.log(width)
+// console.log(height)
+
+//---------
+
+// function func([name, surname, department, position, salary]) {
+// 	console.log(name)
+//         console.log(surname)
+//         console.log(department)
+//         console.log(position)
+//         console.log(salary)
+// }
+
+// func( ['John', 'Smit', 'development', 'programmer', 2000] );
+
+//----------
+
+// function func([name, surname, info, ...arr]) {
+// 	console.log(name)
+//         console.log(surname)
+//         console.log(info)
+//         console.log(arr)
+// }
+
+// func( ['John', 'Smit', 'development', 'programmer', 2000] );
+
+//-------
+
+// function func([name, surname, department]) {
+// 	console.log(name)
+//         console.log(surname)
+//         console.log(department)
+// }
+
+// func( ['John', 'Smit', 'development'] );
+
+//------------
+
+// function func(department, [name, surname], [year, month, day]) {
+//         console.log(department)
+
+// 	console.log(name)
+//         console.log(surname)
+
+//         console.log(year)
+//         console.log(month)
+//         console.log(day)
+
+// }
+
+// func( 'development', ['John', 'Smit'], [2018, 12, 31] );
+
+//--------------
+
+// function func({color, width, height}) {
+//         console.log(color)
+//         console.log(width)
+//         console.log(height)
+// }
+
+// func( {color: 'red', width: 400, height: 500} );
+
+//===============Работа с объектом Date в JavaScript================
+
+
+
+
+
+
+
+
+
+
+
+
 
 
