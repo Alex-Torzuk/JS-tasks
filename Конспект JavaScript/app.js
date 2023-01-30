@@ -4839,8 +4839,167 @@ console.log(typeof arr[0])*/
 
 // func( {color: 'red', width: 400, height: 500} );
 
-//===============Работа с объектом Date в JavaScript================
+//===============Введение в классы и объекты в JavaScript================
 
+// class Car {
+// 	color; // цвет автомобиля
+// 	fuel;  // количество топлива
+	
+// 	// Команда ехать:
+// 	go() {
+// 		// какой-то JavaScript код
+// 	}
+	
+// 	// Команда поворачивать:
+// 	turn() {
+// 		// какой-то JavaScript код
+// 	}
+	
+// 	// Команда остановиться:
+// 	stop() {
+// 		// какой-то JavaScript код
+// 	}
+// }
+
+// let myCar = new Car; // командуем заводу сделать автомобиль
+
+// myCar.color = 'red'; // красим в красный цвет
+// myCar.fuel = 50;     // заливаем топливо
+// console.log(myCar)
+
+//===============
+
+// class Employee {
+//         name;
+//         age;
+//         salary;
+// }
+
+// let newEmployee = new Employee;
+// newEmployee.name = 'Alex';
+// newEmployee.age = 34;
+// newEmployee.salary = 20000;
+
+// let newEmployee2 = new Employee;
+// newEmployee2.name = 'Lux';
+// newEmployee2.age = 24;
+// newEmployee2.salary = 17000;
+
+// console.log(newEmployee)
+// console.log(newEmployee2)
+
+//-----------------
+
+// class User {
+// 	show() {
+// 		return Math.PI;
+// 	}
+// }
+// let user = new User;
+// console.log(user.show()); // выведет 3.141592653589793
+
+//================
+
+// class User {
+// 	show(name, surn) {
+// 		return name + ' ' + surn;
+// 	}
+// }
+
+// let user = new User;
+// console.log(user.show('john', 'smit'));
+
+//==============
+
+// class Employee{
+//         show(){
+//                 console.log(this.name);
+                
+//         }
+//         show2(){
+//                 console.log(this.salary);
+//         }
+// }
+
+// let employee1 = new Employee;
+// employee1.name = 'Lux';
+// employee1.show()
+// employee1.salary = 67000;
+// employee1.show2()
+
+//=============
+
+// class Student{
+//         show() {
+// 		return this.cape(this.name) + this.cape(this.surn);
+// 	}
+	
+// 	cape(str) {
+// 		return str[0].toUpperCase() ;
+// 	}
+// }
+
+// let student1 = new Student;
+
+// student1.name = 'lux';
+
+// student1.surn = 'luka'
+
+// console.log(student1.show())// LL
+
+//==============
+
+// class User {
+//         name = 'lux'
+//         surName = 'Luka'
+
+//         show(){
+//                 return this.name + this.surName
+//         }
+// }
+
+// const user = new User
+// console.log(user.name + ' ' + user.surName )
+
+//==============
+
+// class Employee{
+//         constructor(){
+//                 console.log(Math.PI)
+//         }
+// }
+//  new Employee //3.141592653589793
+
+//-------------------
+
+// class Employee{
+//         constructor(name, salary){
+//                 console.log(name + ' ' + salary)
+//         }
+// }
+
+// new Employee('Jhon', 29000)
+
+//---------------
+
+//Свойства через параметры конструктора в ООП в JavaScript - разобраться
+
+
+class Employee{
+        constructor(name, salary){
+                this.name = name
+                this.salary = salary
+        }
+        show(){
+                return this.name + ' ' + this.salary
+        }
+
+
+}
+
+let employee = new Employee('Jhon', 29000)
+
+console.log(employee.show())
 
 
 
