@@ -5421,12 +5421,16 @@ console.log(typeof arr[0])*/
 // console.log(reg instanceof RegExp);
 //-------
 
-let arr = [1, 2, 3];
+// let arr = [1, 2, 3];
 
-console.log(arr);
-console.dir(arr);
+// console.log(arr);
+// console.dir(arr);
 
-console.log(arr instanceof Array);
+// console.log(arr instanceof Array);
+
+//--------
+
+
 
 
 
