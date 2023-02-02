@@ -4985,27 +4985,448 @@ console.log(typeof arr[0])*/
 //Свойства через параметры конструктора в ООП в JavaScript - разобраться
 
 
-class Employee{
-        constructor(name, salary){
-                this.name = name
-                this.salary = salary
-        }
-        show(){
-                return this.name + ' ' + this.salary
-        }
+// class Employee{
+//         constructor(name, salary){
+//                 this.name = name
+//                 this.salary = salary
+//         }
+//         show(){
+//                 this.salary *= 2
+//                 return console.log(this.name + ' ' + this.salary)
+//         }
 
 
-}
+// }
 
-let employee = new Employee('Jhon', 29000)
+// let employee = new Employee('Jhon', 29000)
 
-console.log(employee.show())
+// employee.show() //Jhon 58000
+// employee.show() //Jhon 116000
+// employee.show() //Jhon 232000
+// employee.show() //Jhon 464000
+
+//==============
+
+// class Employee{
+//         #name;
+//         #salary;
+//         #age;
+
+//         constructor(name, salary, age){
+//                 this.#name = name;
+//                 this.#salary = salary;
+//                 this.#age = age;
+//         }
+
+//         show(){
+//         return console.log(`name: ${this.#name}, salary: ${this.#salary}, age: ${this.#age}.`)
+//         }
+// }
+
+// let employee = new Employee('Lux', 200000, 22)
+// employee.show()
+
+//===============Приватные методы в ООП в JavaScript
 
 
+// class User {
+// 	#name;
+	
+// 	constructor(name) {
+// 		this.#name = name;
+// 	}
+	
+// 	show() {
+// 		return this.#cape(this.#name);
+// 	}
+	
+// 	#cape(str) {
+// 		return str[0].toUpperCase() + str.slice(1);
+// 	}
+// }
+// let user = new User('john');
+// console.log(user.show());
 
+//==============
 
+// class Employee {
+// 	constructor(name, salary) {
+// 		this.name = name;
+// 		this.salary = salary;
+// 	}
+	
+// 	getSalary() {
+// 		return this.name + ' ' + this.#addSign(this.salary);
+// 	}
+	
+// 	#addSign(num) {
+// 		return num + '$';
+// 	}
+// }
 
+// let employee = new Employee('Lux', 20000)
+// console.log(employee.getSalary())
 
+//-------------------Геттеры свойств в ООП в JavaScript---------------
+
+// class Employee {
+//         #name;
+//         #salary;
+//         #age;
+
+//         constructor(name, salary, age){
+//                 this.#name = name;
+//                 this.#salary = salary;
+//                 this.#age = age;
+//         }
+
+//         getName(){
+//                 return this.#name;
+//         }
+//         getSalary(){
+//                 return this.#salary;
+//         }
+//         getAge(){
+//                 return this.#age;
+//         }
+// }
+
+// let employee = new Employee('Lux', 200000, 34);
+// console.log(employee.getName());
+// console.log(employee.getSalary());
+// console.log(employee.getAge())
+
+//-------------------Кастомные сеттеры в ООП в JavaScript---------------
+
+// class Employee {
+//         #name;
+//         #salary;
+//         #age;
+
+//         setName(name){
+//                 this.#name = name;
+//         }
+//         setSalary(salary){
+//                 this.#salary = salary;
+//         }
+//         setAge(age){
+//                 this.#age = age;
+//         }
+
+//         getName(){
+//                 return this.#name;
+//         }
+//         getSalary(){
+//                 return this.#salary;
+//         }
+//         getAge(){
+//                 return this.#age;
+//         }
+// }
+
+// let employee = new Employee;
+// employee.setName('Lux');
+// employee.setSalary(200000);
+// employee.setAge(34)
+// console.log(employee.getName());
+// console.log(employee.getSalary());
+// console.log(employee.getAge())
+
+//===============
+
+// class User {
+// 	#name;
+// 	#surn;
+	
+// 	setName(name) {
+// 		if (name.length > 0) {
+// 			this.#name = name;
+// 		} else {
+// 			throw new Error('name is incorrect');
+// 		}
+// 	}
+// 	setSurn(surn) {
+// 		if (surn.length > 0) {
+// 			this.#surn = surn;
+// 		} else {
+// 			throw new Error('surn is incorrect');
+// 		}
+// 	}
+	
+// 	getName() {
+// 		return this.#name;
+// 	}
+// 	getSurn() {
+// 		return this.#surn;
+// 	}
+// }
+
+// let user = new User
+// user.setName('Lux')
+// user.setSurn('Luka')
+// console.log(user.getName())
+// console.log(user.getSurn())
+
+//----------------
+
+// class Employee{
+//         #name;
+//         #salary;
+//         #age;
+
+//         setName(name){
+//                 this.#name = name;
+//         }
+//         setSalary(salary){
+//                 salary+='$'
+//                 this.#salary = salary; 
+//         }
+//         setAge(age){
+//                 if(age > 0 && age < 120){
+//                         this.#age = age
+//                 }else {
+// 			throw new Error('age is incorrect');
+// 		}
+                
+//         }
+
+//         getName(){
+//                 return this.#name;
+//         }
+//         getSalary(){
+//                 return this.#salary;
+//         }
+//         getAge(){
+//                 return this.#age;
+//         }
+// }
+
+// let employee = new Employee;
+// employee.setName('Lux')
+// employee.setSalary(200000)
+// employee.setAge(34)
+// console.log(employee.getName())
+// console.log(employee.getSalary())
+// console.log(employee.getAge())
+
+//-------------------Цепочки методов в ООП в JavaScript---------------
+
+// class User {
+// 	#name;
+// 	#surn;
+
+// 	setName(name) {
+// 		this.#name = name;
+// 		return this;
+// 	}
+// 	setSurn(surn) {
+// 		this.#surn = surn;
+// 		return this;
+// 	}
+	
+// 	getName() {
+// 		return this.#name;
+// 	}
+// 	getSurn() {
+// 		return this.#surn;
+// 	}
+// }
+// let user = new User;
+// user.setName('john').setSurn('smit');
+// console.log(user.getName());
+// console.log(user.getSurn());
+//------------
+
+// class Employee{
+//         #name;
+//         #salary;
+//         #age;
+
+//         setName(name){
+//                 this.#name = name;
+//                 return this;
+//         }
+//         setSalary(salary){
+//                 this.#salary = salary;
+//                 return this;
+//         }
+//         setAge(age){
+//                 this.#age = age;
+//                 return this;
+//         }
+
+//         getName(){
+//                 return this.#name;
+//         }
+//         getSalary(){
+//                 return this.#salary;
+//         }
+//         getAge(){
+//                 return this.#age;
+//         }
+// }
+
+// let employee = new Employee;
+// employee.setName('Lux').setSalary(100000).setAge(34)
+// console.log(employee.getName());
+// console.log(employee.getSalary());
+// console.log(employee.getAge())
+
+//-------------------Сравнение объектов в ООП в JavaScript---------------
+
+// class Student {
+// 	constructor(name) {
+// 		this.name = name;
+// 	}
+// }
+// class Employee {
+// 	constructor(name) {
+// 		this.name = name;
+// 	}
+// }
+
+// let users = [
+// 	new Student('user1'),
+// 	new Employee('user2'),
+// 	new Student('user3'),
+// 	new Employee('user4'),
+// 	new Student('user5'),
+// 	new Employee('user6'),
+// 	new Student('user7'),
+// ];
+
+// for(let user of users){
+//         // console.log(user.name)
+//         if(user instanceof Employee){
+//                 console.log(user.name)
+//         }
+// }
+
+//-------------------Класс как набор методов в ООП в JavaScript---------------
+
+// class ArrHelper {
+// 	getSum(arr) {
+                
+// 		let res = 0;
+		
+// 		for (let num of arr) {
+// 			res += num;
+// 		}
+		
+// 		return res;
+// 	}
+	
+// 	getAvg(arr) {
+// 		if (arr.length > 0) {
+// 			let sum = this.getSum(arr);
+// 			return sum / arr.length;
+// 		} else {
+// 			return 0;
+// 		}
+// 	}
+// }
+// let arrHelper = new ArrHelper;
+// let sum1 = arrHelper.getSum([1, 2, 3]);
+// console.log(sum1);// 6
+
+// let sum2 = arrHelper.getAvg([3, 4, 5]);
+// console.log(sum2);// 4
+
+//-------------------Объекты внутри классов в ООП в JavaScript---------------
+
+// class City {
+// 	constructor(name) {
+// 		this.name = name;
+// 	}
+// }
+// class User {
+// 	constructor(name, surn, city) {
+// 		this.name = name;
+// 		this.surn = surn;
+// 		this.city = city;
+// 	}
+// }
+// let city = new City('luis');
+// let user = new User('john', 'smit', city);
+// console.log(user.name);
+// console.log(user.city.name);
+
+//------------
+// class Position{
+//         constructor(position){
+//                 this.position = position
+//         }
+// }
+// class Department{
+//         constructor(departmen){
+//                 this.departmen = departmen
+//         }
+// }
+// class Employee {
+// 	constructor(name, position, department) {
+// 		this.name = name;
+// 		this.position = position;
+// 		this.department = department;
+// 	}
+// }
+// let position = new Position('developer')
+// let departmen = new Department('Coder')
+// let employee = new Employee('Lux', position, departmen)
+// console.log(employee.name)
+// console.log(employee.position.position)
+// console.log(employee.department.departmen)
+
+//-------------------Манипуляция объектами в классах в ООП в JavaScript---------------
+
+// class Employee{
+//         #name
+//         constructor(name){
+//                 this.#name = name;
+//         }
+//         getName(){
+//                 return this.#name
+//         }
+// }
+
+// class EmployeesCollection{
+//         #employees;
+//         constructor(){
+//                 this.#employees = []
+//         }
+//         add(employ) {
+// 		this.#employees.push(employ);
+// 	}
+//         show() {
+// 		for (let employ of this.#employees) {
+// 			console.log(employ.getName());
+// 		}
+// 	}
+// }
+
+// let employee = new EmployeesCollection
+// employee.add(new Employee('Lux'))
+// employee.show()
+
+//-------------------Встроенные классы JavaScript---------------
+
+// let date = new Date;
+// console.log(date)
+// console.dir(date);
+//------
+// let reg = new RegExp;
+
+// console.log(reg);
+// console.dir(reg);
+
+// console.log(reg instanceof RegExp);
+//-------
+
+let arr = [1, 2, 3];
+
+console.log(arr);
+console.dir(arr);
+
+console.log(arr instanceof Array);
 
 
 
