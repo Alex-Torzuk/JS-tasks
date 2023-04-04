@@ -3545,7 +3545,7 @@ console.log(typeof arr[0])*/
 // const func2 = () => 2
 // alert(func1() + func2())
 
-//  Cледует придерживаться правила, общего для всех языков программирования: 
+//  Cледует придерживаться правила, общего для всех языков программирования:
 //  функции должны быть глаголами, а переменные - существительными
 
 //===============Function expression и Function declaration в JavaScript================
@@ -3646,9 +3646,9 @@ console.log(typeof arr[0])*/
 // 	cube: function(arr) {
 //                 let res = 1
 //                 for (let elem of arr){
-//                         res *= elem * elem 
+//                         res *= elem * elem
 //                 }
-//                 return res 
+//                 return res
 //         },
 // };
 
@@ -3671,7 +3671,7 @@ console.log(typeof arr[0])*/
 
 // test(
 //         function(){return 1}(),
-//         function(){return 2}(),  
+//         function(){return 2}(),
 //         function(){return 3}() // 6
 // )
 
@@ -3898,13 +3898,13 @@ console.log(typeof arr[0])*/
 // function func1(){
 //        return function(){
 //         return 1
-//        } 
+//        }
 // }
 
 // function func2(){
 //         return function(){
 //          return 2
-//         } 
+//         }
 //  }
 
 //  function result(res1, res2){
@@ -4521,10 +4521,10 @@ console.log(typeof arr[0])*/
 
 //---------------
 
-// let arr = ['i', 'would', 'like', 'a', 'cup', 'of', 'coffee'] 
+// let arr = ['i', 'would', 'like', 'a', 'cup', 'of', 'coffee']
 
 // console.log(arr.filter(function(elem){
-// 	return elem.length >= 5 
+// 	return elem.length >= 5
 	
 // }))// ['would', 'coffee']
 
@@ -4704,7 +4704,7 @@ console.log(typeof arr[0])*/
 // let[name, surname, ...arr1] = arr
 // console.log(name)
 // console.log(surname)
-// console.log(arr1) 
+// console.log(arr1)
 
 //--------------
 
@@ -5179,7 +5179,7 @@ console.log(typeof arr[0])*/
 //         }
 //         setSalary(salary){
 //                 salary+='$'
-//                 this.#salary = salary; 
+//                 this.#salary = salary;
 //         }
 //         setAge(age){
 //                 if(age > 0 && age < 120){
@@ -5429,6 +5429,67 @@ console.log(typeof arr[0])*/
 // console.log(arr instanceof Array);
 
 //--------
+
+//----------------Работа с объектом Date в JavaScript------------
+
+// let date = new Date();
+// console.log(date.getDate()) //3
+// console.log(date.getMonth() + 1) // 4
+// console.log(date.getFullYear()) // 2023
+//=====
+// function addZero(num) {
+//         if (num > 0 && num < 9) {
+//                 return '0' + num
+//         } else {
+//                 return num
+//         }
+// }
+
+// let time = new Date()
+
+// console.log(
+//         addZero(time.getHours()) + ':' +
+//         addZero(time.getMinutes()) + ':' +
+//         addZero(time.getSeconds()) + ' ' +
+//         addZero(time.getDate()) + '.' +
+//         addZero(time.getMonth() + 1) + '.' +
+//         addZero(time.getFullYear())
+
+// ) // 18:45:02 03.04.2023
+
+//----------Смена формата даты в JavaScript----------
+
+// let date = '2023-12-31'
+// console.log(date.split('-').reverse().join('.'))// 31.12.2023
+
+// ---------------------Получения дня недели на JavaScript---------
+
+// let date = new Date()
+// console.log(date.getDay()) // 1
+
+//----------Вывод частей даты словом в JavaScript------------
+
+// let data = new Date()
+// let day = data.getDay()
+// const days = ['Вс', 'Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб']
+// console.log(days[day])
+//========
+
+// let months = [
+// 	'янв', 'фев', 'мар', 'апр', 'май', 'июн',
+// 	'июл', 'авг', 'сен', 'окт', 'ноя', 'дек'
+// ];
+
+// let data = new Date()
+// let month = data.getMonth()
+// console.log(months[month]) // апр
+
+
+
+
+
+
+
 
 
 
