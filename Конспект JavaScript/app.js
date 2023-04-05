@@ -5484,6 +5484,61 @@ console.log(typeof arr[0])*/
 // let month = data.getMonth()
 // console.log(months[month]) // апр
 
+//-------Установка времени в объекте Date в JavaScript---------
+
+// let date = new Date(2020, 2, 1)
+// let day = date.getDay()
+// let days = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб']
+// console.log(days[day])
+
+//---------------Получение времени в формате timestamp в JavaScript------
+
+// let date = new Date();
+// console.log(date.getTime());
+
+// let date2 = new Date(1970, 0, 1, 12, 1, 59);
+// console.log(date2.getTime());
+
+//-----Разность между датами в формате timestamp в JavaScript-------
+
+// let now  = new Date();
+// let date = new Date(1988, 10, 13, 16, 17, 59);
+
+// let diff = now.getTime() - date.getTime();
+// console.log((diff / (1000 * 60 * 60)) * 24)
+
+//----Автоматическая корректировка дат в JavaScript---------
+
+// let year  = 2025;
+// let month = 0;
+// let day   = 32;
+
+// let date = new Date(year, month, day);
+
+// if (date.getFullYear() == year && date.getMonth() == month && date.getDate() == day) {
+// 	console.log('корректна');
+// } else {
+// 	console.log('некорректна');
+// }
+
+//------------DOM-----------------
+
+// let button = document.querySelector('#button')
+// console.log(button)
+
+//=========================
+
+// let elem1 = document.querySelector('#elem1')
+// console.log(elem1)
+// let elem2 = document.querySelector('#elem2')
+// console.log(elem2)
+// let elem3 = document.querySelector('#elem3')
+// console.log(elem3)
+
+//====================
+
+// let block1 = document.querySelector('#block p')
+// console.log(block1)
 
 
 
