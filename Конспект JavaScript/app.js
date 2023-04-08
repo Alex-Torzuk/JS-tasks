@@ -5643,13 +5643,48 @@ console.log(typeof arr[0])*/
 
 // button.addEventListener('click', func )
 //===============
-доделать 2 задачу!!
 
-const button = document.querySelector('#button')
-let p = document.querySelector('.p')
-function()
-button.addEventListener('click', )
+// const button = document.querySelector('#button')
+// let p = document.querySelector('.p')
+// function func() {
+//         p.textContent = 'This is a new text'
+// }
+// button.addEventListener('click', func)
 
+//===============
+
+// const button = document.querySelector('#button')
+// let p1 = document.querySelector('.p1')
+// let p2 = document.querySelector('.p2')
+// let result = document.querySelector('.result')
+
+// function func (){
+//       result.textContent = Number(p1.textContent) + Number(p2.textContent)
+// return result
+// }
+
+// button.addEventListener('click', func)
+
+//====
+
+// const button = document.querySelector('#button')
+// let elem = document.querySelector('.elem')
+// function func(){
+//         elem.textContent = Number(elem.textContent) + 1
+// }
+
+// button.addEventListener('click', func)
+
+//======
+
+// const button = document.querySelector('#button')
+// const text = document.querySelector('.text')
+// function func(){
+//         text.textContent = text.textContent + ' !'
+// }
+// button.addEventListener('click', func)
+
+//=====Работа с HTML кодом элементов на JavaScript=======
 
 
 
