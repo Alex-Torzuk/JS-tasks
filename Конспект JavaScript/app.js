@@ -5540,6 +5540,118 @@ console.log(typeof arr[0])*/
 // let block1 = document.querySelector('#block p')
 // console.log(block1)
 
+//==========Привязывание обработчиков к элементам в JavaScript=========
+
+// let button = document.querySelector('#button')
+// button.addEventListener('click', function () {
+//         console.log('How are you')
+// })
+//===========
+
+// let button_1 = document.querySelector('#button1')
+// let button_2 = document.querySelector('#button2')
+// let button_3 = document.querySelector('#button3')
+// button_1.addEventListener('click', function () {
+//         alert('Button - 1')
+// })
+
+// button_2.addEventListener('click', function () {
+//         alert('Button - 2')
+// })
+
+// button_3.addEventListener('click', function () {
+//         alert('Button - 3')
+// })
+
+//-----------------Именованные обработчики событий в JavaScript---
+
+
+// function func1() {
+// 	console.log(1);
+// }
+
+// function func2() {
+// 	console.log(2);
+// }
+
+// let button1 = document.querySelector('#button1')
+// let button2 = document.querySelector('#button2')
+
+// button1.addEventListener('click', func1)
+// button2.addEventListener('click', func2)
+
+//------------------Один обработчик ко многим элементам в JavaScript-----
+
+// function func() {
+// 	console.log('message');
+// }
+
+// let elem1 = document.querySelector('#elem1')
+// elem1.addEventListener('click', func)
+// let elem2 = document.querySelector('#elem2')
+// elem2.addEventListener('click', func)
+// let ele31 = document.querySelector('#elem3')
+// elem3.addEventListener('click', func)
+// let elem4 = document.querySelector('#elem4')
+// elem4.addEventListener('click', func)
+// let elem5 = document.querySelector('#elem5')
+// elem5.addEventListener('click', func)
+
+//==============Несколько обработчиков одного события в JavaScript---
+
+// function func1() {
+// 	console.log('1');
+// }
+
+// function func2() {
+// 	console.log('2');
+// }
+
+// function func3() {
+// 	console.log('3');
+// }
+
+// const elem = document.querySelector('#elem')
+// elem.addEventListener('click', func1)
+// elem.addEventListener('click', func2)
+// elem.addEventListener('click', func3)
+
+//-----Обработчики разных событий в JavaScript========
+// function funcover() {
+//         alert('Wellcome !!!')
+// }
+
+// function funcout() {
+//         alert('Goodby !!!')
+// }
+
+// const box = document.querySelector('.box')
+// // box.addEventListener('dblclick', func)
+// box.addEventListener('mouseover', funcover)
+// box.addEventListener('mouseout', funcout)
+
+//=========Работа с текстом элементов на JavaScript=========
+
+
+// const button = document.querySelector('#button')
+// const p = document.querySelector('.p')
+// function func() {
+//        p.textContent = `Дан абзац и кнопка. По клику на кнопку
+// прочитайте текст абзаца и выведите его в консоль.`
+//         console.log(p)
+// }
+
+// button.addEventListener('click', func )
+//===============
+доделать 2 задачу!!
+
+const button = document.querySelector('#button')
+let p = document.querySelector('.p')
+function()
+button.addEventListener('click', )
+
+
+
 
 
 
