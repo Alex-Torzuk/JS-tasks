@@ -5686,10 +5686,79 @@ console.log(typeof arr[0])*/
 
 //=====Работа с HTML кодом элементов на JavaScript=======
 
+// const button = document.querySelector('#button')
+// const text = document.querySelector('.text')
+// function func() {
+//         text.textContent = '<bHello</b>'
+        
+// }
 
 
+// button.addEventListener('click', func)
 
+//=====Атрибуты тегов как свойства в JavaScript=====
 
+// let elem = document.querySelector('#elem')
+// function func(){
+//         elem.type = 'submit'
+// }
+// elem.addEventListener('click', func)
+//======
+
+// const button = document.querySelector('#button')
+// const a = document.querySelector('.a')
+// const p = document.querySelector('.p')
+
+// function func(){
+//         p.textContent = a.href
+// }
+
+// button.addEventListener('click', func)
+
+//-------
+
+// const button = document.querySelector('#button')
+// const a = document.querySelector('.a')
+// function func(){
+//         a.textContent +=  a.href
+// }
+// button.addEventListener('click', func)
+
+//=======
+
+// const button = document.querySelector('#button')
+// const img = document.querySelector('.img')
+// const p = document.querySelector('.p')
+// function func() {
+//       p.textContent = img.src  
+// }
+// button.addEventListener('click', func)
+//=====
+
+// const button = document.querySelector('#button')
+// const img = document.querySelector('.img')
+// function func() {
+// img.width = 300
+
+// }
+// button.addEventListener('click', func)
+//=======
+
+const button1 = document.querySelector('#button1')
+const button2 = document.querySelector('#button2')
+const img = document.querySelector('.img')
+function func1() {
+        img.src = 'https://images.unian.net/photos/2022_06/1656498354-6918.jpg?r=862252'
+}
+
+function func2() {
+        img.src = 'https://planbphoto.com/wp-content/uploads/Serze.jpg'
+}
+
+button1.addEventListener('click', func1)
+button2.addEventListener('click', func2)
+
+//----Работа с текстовыми полями в JavaScript------
 
 
 
