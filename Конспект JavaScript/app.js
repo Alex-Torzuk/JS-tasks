@@ -5730,7 +5730,7 @@ console.log(typeof arr[0])*/
 // const img = document.querySelector('.img')
 // const p = document.querySelector('.p')
 // function func() {
-//       p.textContent = img.src  
+//       p.textContent = img.src
 // }
 // button.addEventListener('click', func)
 //=====
@@ -5744,29 +5744,125 @@ console.log(typeof arr[0])*/
 // button.addEventListener('click', func)
 //=======
 
-const button1 = document.querySelector('#button1')
-const button2 = document.querySelector('#button2')
-const img = document.querySelector('.img')
-function func1() {
-        img.src = 'https://images.unian.net/photos/2022_06/1656498354-6918.jpg?r=862252'
-}
+// const button1 = document.querySelector('#button1')
+// const button2 = document.querySelector('#button2')
+// const img = document.querySelector('.img')
+// function func1() {
+//         img.src = 'https://images.unian.net/photos/2022_06/1656498354-6918.jpg?r=862252'
+// }
 
-function func2() {
-        img.src = 'https://planbphoto.com/wp-content/uploads/Serze.jpg'
-}
+// function func2() {
+//         img.src = 'https://planbphoto.com/wp-content/uploads/Serze.jpg'
+// }
 
-button1.addEventListener('click', func1)
-button2.addEventListener('click', func2)
+// button1.addEventListener('click', func1)
+// button2.addEventListener('click', func2)
 
 //----Работа с текстовыми полями в JavaScript------
 
+// const button = document.querySelector('#button')
+// function func() {
+//         button.value = 'OK'
+// }
+// button.addEventListener('click', func)
+//===========
+
+// const button = document.querySelector('#button')
+// const p = document.querySelector('.p')
+// function func() {
+//         p.textContent = button.value
+// }
+// button.addEventListener('click', func)
+//=========
+
+// const input = document.querySelector('.input')
+// const button = document.querySelector('.button')
+// function func() {
+//         input.value = 'Wellcome to Ukraine'
+// }
+// button.addEventListener('click', func)
+
+//=====
+
+// const input = document.querySelector('.input')
+// const p = document.querySelector('.p')
+// const button = document.querySelector('.button')
+// function func() {
+//         p.textContent = input.value
+// }
+// button.addEventListener('click', func)
+
+//=========
+
+// const input1 = document.querySelector('.input1')
+// const input2 = document.querySelector('.input2')
+// const button = document.querySelector('.button')
+// function func() {
+//         input2.value = input1.value ** 2
+// }
+// button.addEventListener('click', func)
+//===== I NEED HELP
+
+// const input1 = document.querySelector('.input1')
+// const input2 = document.querySelector('.input2')
+// const button = document.querySelector('.button')
+// function func() {
+        
+               
+        
+// }
+// button.addEventListener('click', func)
+
+//=============Фокус текстовых полей в JavaScript=========
+
+// let elem = document.querySelector('#elem');
+// elem.addEventListener('focus', function() {
+// 	console.log(elem.value);
+// });
+
+//=====
+
+// const input = document.querySelector('#input')
+
+// input.addEventListener('focus', function () {
+//   input.value = 'Open'
+// })
+// input.addEventListener('blur', function () {
+//   input.value = 'Exit'
+// })
+
+//=====
+// const input = document.querySelector('#input')
+// input.addEventListener('blur', function () {
+//         input.value = input.value ** 2
+// })
+
+//=======
+
+// const input = document.querySelector('#input')
+// input.addEventListener('focus', function () {
+//         input.value = ''
+// })
+
+//=====Исключения при работе с атрибутами в JavaScript====
+
+// const elem = document.querySelector('#elem')
+// const button = document.querySelector('.button')
+// button.addEventListener('click', function () {
+//         elem.className = elem.className += ' lux'
+//         console.log(elem)
+        
+// })
+//-----------Цепочки методов и свойств в JavaScript--------
+
+// let image = document.querySelector('#image').src;
+
+//=========Объект this в JavaScript===========
 
 
 
 
+     
 
 
-
-
-
-
+        
