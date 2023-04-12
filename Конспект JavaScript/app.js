@@ -5858,10 +5858,76 @@ console.log(typeof arr[0])*/
 // let image = document.querySelector('#image').src;
 
 //=========Объект this в JavaScript===========
+// let elem = document.querySelector('#elem');
+// elem.addEventListener('blur', func);
+// function func() {
+// 	console.log(this); // содержит ссылку на наш элемент
+// }
 
+// function func() {
+// 	console.log(this.value); // выведем содержимое атрибута
+// }
 
+// function func() {
+// 	this.value = '!!!';
+// }
 
+//=============
 
+// const input = document.querySelector('#input')
+// input.addEventListener('focus', function () {
+//         this.value = 'Hello, my friend'
+// })
+// input.addEventListener('blur', function () {
+//         this.value = 'Bye Alex'
+// })
+
+//=======
+
+// const button = document.querySelector('.button')
+// button.addEventListener('click', function () {
+//         this.value ++
+//         console.log(this.value)
+// })
+
+//======
+
+// const a1 = document.querySelector('.a1')
+// const a2 = document.querySelector('.a2')
+// const a3 = document.querySelector('.a3')
+// const a4 = document.querySelector('.a4')
+// const a5 = document.querySelector('.a5')
+// function func() {
+//         this.textContent  += ' !!!'
+// }
+// a1.addEventListener('click', func)
+// a2.addEventListener('click', func)
+// a3.addEventListener('click', func)
+// a4.addEventListener('click', func)
+// a5.addEventListener('click', func)
+
+//------------
+
+// const input1 = document.querySelector('.input1')
+// const input2 = document.querySelector('.input2')
+// const input3 = document.querySelector('.input3')
+// function func() {
+//         this.value = this.value ** 2
+// }
+// input1.addEventListener('blur', func)
+// input2.addEventListener('blur', func)
+// input3.addEventListener('blur', func)
+
+//====
+
+//--------Получение группы элементов в JavaScript----------
+
+let elems = document.querySelectorAll('.www');
+console.log(elems)
+for (let elem of elems) {
+        console.log(elem.textContent);
+        
+}
      
 
 
