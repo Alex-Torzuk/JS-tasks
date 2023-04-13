@@ -5922,12 +5922,47 @@ console.log(typeof arr[0])*/
 
 //--------Получение группы элементов в JavaScript----------
 
-let elems = document.querySelectorAll('.www');
-console.log(elems)
-for (let elem of elems) {
-        console.log(elem.textContent);
+// let elems = document.querySelectorAll('.www');
+// let button = document.querySelector('.button')
+
+// button.addEventListener('click', function(){
+//         for(let elem of elems){
+//                 elem.textContent = 'text'
+//         }
+                
+// })
+//======
+
+// const elems = document.querySelectorAll('.www')
+// const button = document.querySelector('.button')
+
+// button.addEventListener('click', function(){
+//                 for(let i = 0; i <= elems.length-1; i++){
+                        
+                        
+//                         elems[i].textContent += ' - ' + [1 + i]
+
+//                 }
+//         }
+// )
+//===========
+
+// const inputs = document.querySelectorAll('.inputs')
+// const p = document.querySelector('.p')
+// const button = document.querySelector('.button')
+// button.addEventListener('click', function(){
+//         let result = 0
+//         for(let elem of inputs){
+//                result += Number(elem.value)
+
+//         }
+//        return p.textContent += result
         
-}
+// })
+
+//--------Добавление обработчиков в цикле в JavaScript----
+
+
      
 
 
