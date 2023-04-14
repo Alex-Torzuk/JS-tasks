@@ -5962,6 +5962,91 @@ console.log(typeof arr[0])*/
 
 //--------Добавление обработчиков в цикле в JavaScript----
 
+// const inputs = document.querySelectorAll('.inputs')
+// for (let elem of inputs) {
+//         elem.addEventListener('blur', function func() {
+// 	this.value = Number(this.value) + 1;
+// })
+// }
+//-----
+
+// const p = document.querySelectorAll('.p')
+// for (let elem of p) {
+//         elem.addEventListener('click', function () {
+//                 this.textContent **= 2
+//         })
+// }
+//===
+
+
+// let elems = document.querySelectorAll('p');
+// for (let elem of elems) {
+//         elem.addEventListener('click', function () {
+//                 console.log(elem.textContent)
+//         })
+// }
+
+//==============Отвязывание событий в JavaScript============
+
+// const a = document.querySelector('.a')
+// const button = document.querySelector('.button')
+
+// button.addEventListener('click', func)
+// function func() {
+//         a.textContent += a.href
+//         button.removeEventListener('click', func)
+// }
+
+//======
+
+// const button = document.querySelector('.button')
+// function func() {
+//         button.textContent ++
+//         if (button.textContent == 10) {
+//                 button.removeEventListener('click', func)
+//         }
+        
+// }button.addEventListener('click', func)
+
+//======Отвязывание обработчиков событий в цикле в JavaScript=====
+
+// const p = document.querySelectorAll('.p')
+// for (let elem of p) {
+//         elem.addEventListener('click', func)
+// }
+// function func() {
+//         this.textContent += ' !'
+//         this.removeEventListener('click', func)
+        
+// }
+
+//=========Отвязывание анонимных функций в JavaScript===========
+
+// const elems = document.querySelectorAll('ul li')
+// console.log(elems)
+// for (let elem of elems) {
+//         elem.addEventListener('click', function func () {
+//                 elem.textContent++
+//                 if (elem.textContent == 10) {
+//                         elem.removeEventListener('click', func)
+//                 }
+                
+//         })
+// }
+
+//=========Работа с атрибутами через методы в JavaScript=============
+
+
+
+
+
+
+
+
+
+
+
+
 
      
 
