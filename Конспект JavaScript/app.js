@@ -6036,6 +6036,29 @@ console.log(typeof arr[0])*/
 
 //=========Работа с атрибутами через методы в JavaScript=============
 
+//Метод getAttribute
+
+// const elem = document.querySelector('#elem')
+// console.log(elem.getAttribute('class'))
+
+//Метод setAttribute
+// const elem = document.querySelector('#elem')
+// elem.setAttribute('value', 'Hello')
+// elem.setAttribute('class', 'valid')
+// console.log(elem.getAttribute('class'))
+
+//Метод removeAttribute
+
+// const elem = document.querySelector('#elem')
+// elem.removeAttribute('value')
+
+//Метод hasAttribute
+
+// const elem = document.querySelector('#elem')
+// console.log(elem.hasAttribute('value'))// true
+ 
+//========Манипулирование CSS классами в JavaScript========
+
 
 
 
