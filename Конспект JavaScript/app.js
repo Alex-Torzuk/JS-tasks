@@ -6059,10 +6059,52 @@ console.log(typeof arr[0])*/
  
 //========Манипулирование CSS классами в JavaScript========
 
+//Массив классов
+
+//Свойство classList
+
+// const elem = document.querySelector('#elem')
+// // console.log(elem.classList.length)
+// const elems = elem.classList
+// for (let el of elems){
+//         document.write(el + '<br>')
+// }
+
+//Добавление классов
+
+// const elem = document.querySelector('#elem')
+// elem.classList.add('xxx')
+// const everythinkClass = elem.classList
+// for(let el of everythinkClass){
+//         document.write(el + '<br>')
+// }
+
+//Удаление классов
+// const elems = document.querySelector('#elem')
+// elems.classList.remove('www', 'zzz')
+// const everythinkClass = elems.classList
+// for (let el of everythinkClass){
+//         document.write(el)
+// }
+
+//Проверка классов
+
+// const elem = document.querySelector('#elem')
+// const everythinkClass = elem.classList.contains('ggg')
+// console.log(everythinkClass)
+
+//Чередование классов
+// const elem = document.querySelector('#elem')
+// elem.classList.toggle('www')
+// const elems = elem.classList
+// for (let el of elems){
+//         document.write(el + '<br>')
+// }
 
 
-
-
+//========Стилизация элементов через атрибут style в JavaScript===
+const p = document.querySelector('.p')
+p.style.color = 'red'
 
 
 
