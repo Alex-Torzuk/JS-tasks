@@ -6103,9 +6103,41 @@ console.log(typeof arr[0])*/
 
 
 //========Стилизация элементов через атрибут style в JavaScript===
-const p = document.querySelector('.p')
-p.style.color = 'red'
+// const p = document.querySelector('.p')
+// p.style.background = 'red'
+// p.style.width = '100px'
 
+//=====
+// const div = document.querySelector('.div')
+// const button = document.querySelector('.button')
+// button.addEventListener('click', function () {
+//         div.style.background = 'blue'
+//         div.style.width = '40xp'
+//         div.style.height = '50px'
+//         div.style.border = 'solid'
+// })
+//===
+
+// const elemDiv = document.querySelector('.div')
+// const button = document.querySelector('.button')
+// button.addEventListener('click', function () {
+//         elemDiv.style.fontSize = '20px'
+//         elemDiv.style.borderTop = 'solid'
+//         elemDiv.style.marginBottom = '10px'
+//         elemDiv.style.width = '300px'// })
+
+//====
+
+const elems = document.querySelector('ul li')
+const button = document.querySelector('.button') 
+button.addEventListener('click', function () {
+        
+        elems.style.cssFloat = 'left'
+        elems.style.color = 'red'
+        elems.style.textDecoration = 'none'
+        
+        
+})
 
 
 
