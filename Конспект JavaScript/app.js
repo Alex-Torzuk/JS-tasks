@@ -6128,16 +6128,21 @@ console.log(typeof arr[0])*/
 
 //====
 
-const elems = document.querySelector('ul li')
-const button = document.querySelector('.button') 
-button.addEventListener('click', function () {
-        
-        elems.style.cssFloat = 'left'
-        elems.style.color = 'red'
-        elems.style.textDecoration = 'none'
-        
-        
-})
+// const elems = document.querySelectorAll('ul li')
+// const button = document.querySelector('.button') 
+
+// button.addEventListener('click', function (){
+//         for(let el of elems){
+//                 console.log(el) 
+//                 el.style.cssFloat = 'left'
+//                 el.style.color = 'red'
+//                 el.style.marginRight = '20px'
+//         }                
+// })
+
+//====Стилизация с помощью CSS классов на JavaScript====
+
+
 
 
 
