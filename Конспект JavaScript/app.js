@@ -6141,10 +6141,39 @@ console.log(typeof arr[0])*/
 // })
 
 //====Стилизация с помощью CSS классов на JavaScript====
+// const p = document.querySelectorAll('.p')
+// for(let elem of p){
+//         elem.addEventListener('click', function(){
+//                 elem.classList.add('colored')
+//         })
+// }
+//======
+
+const p = document.querySelector('.p')
+const buttonBorder = document.querySelector('.buttonBorder')
+const buttonBold = document.querySelector('.buttonBold')
+const buttonColor = document.querySelector('.buttonColor')
+
+buttonBorder.addEventListener('click', func1)
+
+buttonBold.addEventListener('click', func2)
+
+buttonColor.addEventListener('click', func3)
 
 
+function func1(){
+        p.style.textDecoration = 'line-through'
+}
 
+function func2(){
+        p.style.fontWeight = 'bold'
+}
 
+function func3(){
+        p.style.color = 'red'
+}
+
+//Дополнительное преимущество
 
 
 

@@ -28,3 +28,7 @@ margin-right: 100px;
 #button1,  #button2{
     display: block;
 }
+
+.colored {
+    color: green;
+}
