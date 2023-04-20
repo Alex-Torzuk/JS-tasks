@@ -6129,15 +6129,15 @@ console.log(typeof arr[0])*/
 //====
 
 // const elems = document.querySelectorAll('ul li')
-// const button = document.querySelector('.button') 
+// const button = document.querySelector('.button')
 
 // button.addEventListener('click', function (){
 //         for(let el of elems){
-//                 console.log(el) 
+//                 console.log(el)
 //                 el.style.cssFloat = 'left'
 //                 el.style.color = 'red'
 //                 el.style.marginRight = '20px'
-//         }                
+//         }
 // })
 
 //====Стилизация с помощью CSS классов на JavaScript====
@@ -6149,31 +6149,130 @@ console.log(typeof arr[0])*/
 // }
 //======
 
-const p = document.querySelector('.p')
-const buttonBorder = document.querySelector('.buttonBorder')
-const buttonBold = document.querySelector('.buttonBold')
-const buttonColor = document.querySelector('.buttonColor')
+// const p = document.querySelector('.p')
+// const buttonBorder = document.querySelector('.buttonBorder')
+// const buttonBold = document.querySelector('.buttonBold')
+// const buttonColor = document.querySelector('.buttonColor')
 
-buttonBorder.addEventListener('click', func1)
+// buttonBorder.addEventListener('click', func1)
 
-buttonBold.addEventListener('click', func2)
+// buttonBold.addEventListener('click', func2)
 
-buttonColor.addEventListener('click', func3)
+// buttonColor.addEventListener('click', func3)
 
 
-function func1(){
-        p.style.textDecoration = 'line-through'
-}
+// function func1(){
+//         p.style.textDecoration = 'line-through'
+// }
 
-function func2(){
-        p.style.fontWeight = 'bold'
-}
+// function func2(){
+//         p.style.fontWeight = 'bold'
+// }
 
-function func3(){
-        p.style.color = 'red'
-}
+// function func3(){
+//         p.style.color = 'red'
+// }
 
 //Дополнительное преимущество
+// let elems = document.querySelectorAll('.p');
+
+// for (let elem of elems) {
+// 	elem.addEventListener('click', function func() {
+//                 this.classList.toggle('colored');
+//                 elem.removeEventListener('click', func)
+// 	});
+// }
+
+
+//============Нахождение элементов по родственным связям в JavaScript====
+
+//Потомки элементов
+
+//Свойство firstElementChild--------
+// let parent = document.querySelector('#parent');
+// let text = parent.firstElementChild.innerHTML;
+
+// console.log(text);//1
+
+//Свойство lastElementChild-------
+// let parent = document.querySelector('#parent');
+// let text = parent.lastElementChild.innerHTML;
+
+// console.log(text);//2
+
+//Свойство children------------
+// let parent = document.querySelector('#parent');
+// let elems = parent.children;
+
+// for (let elem of elems) {
+// 	console.log(elem.innerHTML);
+// }
+
+//Свойство childNodes--------
+// let parent = document.querySelector('#parent');
+// let nodes = parent.childNodes;
+
+// for (let node of nodes) {
+// 	console.log(node.textContent);
+// }
+//============
+
+// const firstchild = document.querySelector('#elem')
+// firstchild.firstElementChild.style.color = 'red'
+//
+// const lastChild = document.querySelector('#elem')
+// lastChild.lastElementChild.style.color = 'yellow'
+//
+// const everyChild = document.querySelector('#elem')
+// const elems = everyChild.children
+// for (let elem of elems) {
+//         elem.textContent += '!'
+// }
+
+//Родители элементов------
+
+// const parentsElem = document.querySelector('#elem')
+// const parant = parentsElem.parentElement
+// parant.style.border = 'solid'
+
+//Поиск всех родителей
+
+//Метод closest
+
+// const child = document.querySelector('#elem')
+// let paren = child.closest('div')
+// console.log(parent)
+
+//
+// const child = document.querySelector('#elem')
+// const parent = child.closest('.www')
+// console.log(parent)
+
+//Поиск соседей
+//Свойство previousElementSibling
+
+// const elem = document.querySelector('#elem')
+// const elemTop = elem.previousElementSibling
+// elemTop.textContent += ' !'
+
+
+//Свойство nextElementSibling
+
+// const elem = document.querySelector('#elem')
+// const elemBottom = elem.nextElementSibling
+// elemBottom.textContent += ' !!'
+//==
+//Поменяйте местами текст его соседа сверху и текст его соседа снизу.
+const elem = document.querySelector('#elem')
+
+elem.previousElementSibling.textContent = 'text4'
+ 
+elem.nextElementSibling.textContent = 'text2' 
+
+//Другие полезные методы для поиска на JavaScript
+
+
+
 
 
 
