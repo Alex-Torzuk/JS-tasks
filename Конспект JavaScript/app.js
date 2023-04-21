@@ -6263,21 +6263,45 @@ console.log(typeof arr[0])*/
 // elemBottom.textContent += ' !!'
 //==
 //Поменяйте местами текст его соседа сверху и текст его соседа снизу.
-const elem = document.querySelector('#elem')
+// const elem = document.querySelector('#elem')
 
-elem.previousElementSibling.textContent = 'text4'
+// elem.previousElementSibling.textContent = 'text4'
  
-elem.nextElementSibling.textContent = 'text2' 
+// elem.nextElementSibling.textContent = 'text2' 
 
-//Другие полезные методы для поиска на JavaScript
+//=====Другие полезные методы для поиска на JavaScript====
+
+//Получение по id
+//Метод getElementById
+
+// const elemDiv = document.getElementById('elem')
+// elemDiv.innerHTML = 'Hello everybody'
+
+//Получение по имени тега
+//Метод getElementsByTagName
+
+// const elems = document.getElementsByTagName('li')
+// for(let elem of elems){
+//         elem.style.color = 'red'
+// }
 
 
+//Получение по имени класса
+//Метод getElementsByClassName
 
+// const elems = document.getElementsByClassName('www')
+// for (let elem of elems){
+//         elem.style.color = 'red'
+// }
 
+//=====Поиск элементов внутри другого элемента в JavaScript====
 
-
-
-
+const elems = document.querySelectorAll(' .www')
+let elem1 = []
+for (let elem of elems){
+elem1 += elem.textContent
+}
+console.log(elem1)
      
 
 
