@@ -6296,13 +6296,38 @@ console.log(typeof arr[0])*/
 
 //=====Поиск элементов внутри другого элемента в JavaScript====
 
-const elems = document.querySelectorAll(' .www')
-let elem1 = []
-for (let elem of elems){
-elem1 += elem.textContent
-}
-console.log(elem1)
-     
+// const elems = document.querySelectorAll(' .www')
+// let elem1 = []
+// for (let elem of elems){
+// elem1 += elem.textContent
+// }
+// console.log(elem1)
+// const elems2 = document.querySelectorAll('.ggg')
+// let elem2 = []
+// for (let el of elems2){
+//         elem2 += el.textContent
+// }
+// console.log(elem2)     
 
+//====Пользовательские атрибуты в JavaScript=====
+
+// const elem = document.querySelector('#elem')
+// elem.addEventListener('click', function(){
+//         elem.textContent += elem.dataset.text
+// })
+//---
+// const elems = document.querySelectorAll('div')
+// for (let elem of elems){
+//         elem.addEventListener('click', function(){
+//                 this.textContent += this.dataset.num
+//         })
+// }
+//==== Задача 4
+const button = document.querySelector('button')
+button.addEventListener('click', function(){
+        console.log(button.dataset.click++)
+})
+
+//==== Задача 4
 
         
