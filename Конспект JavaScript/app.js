@@ -6322,7 +6322,7 @@ console.log(typeof arr[0])*/
 //                 this.textContent += this.dataset.num
 //         })
 // }
-//==== Задача 4
+//==== Задача 3
 const button = document.querySelector('button')
 button.addEventListener('click', function(){
         console.log(button.dataset.click++)
