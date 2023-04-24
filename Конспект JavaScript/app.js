@@ -6323,11 +6323,33 @@ console.log(typeof arr[0])*/
 //         })
 // }
 //==== Задача 3
-const button = document.querySelector('button')
-button.addEventListener('click', function(){
-        console.log(button.dataset.click++)
-})
+// const button = document.querySelector('button')
+// button.addEventListener('click', function(){
+//         console.log(button.dataset.click++)
+// })
 
 //==== Задача 4
 
-        
+// const input = document.querySelector('#elem')
+// input.addEventListener('blur', function(){
+//         if(input.value.length == input.dataset.length){
+//                 alert('Everething cool')
+//         }
+// })        
+//==== Задача 5
+// const input = document.querySelector('#elem')
+// input.addEventListener('blur', function(){
+//         if(input.value.length < input.dataset.min || input.value.length > input.dataset.max){
+//                 alert('it is too a lot of elems')
+//         }
+// })
+
+//Имена с дефисами
+
+// const input = document.querySelector('#elem')
+// input.addEventListener('click', function(){
+//         input.textContent +=  input.dataset.productPrice * input.dataset.productAmount
+// })
+
+//Обращение через методы
+
