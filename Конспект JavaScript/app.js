@@ -6354,4 +6354,11 @@ console.log(typeof arr[0])*/
 //Обращение через методы
 
 const p = document.querySelectorAll('p')
+for(elem of p){
+        for(let i = 1; i <= p; i++){
+                elem.setAttribute('value', 'i')
+                console.log(elem)
+        }
+}
+
 
