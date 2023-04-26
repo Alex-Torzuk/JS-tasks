@@ -6353,12 +6353,14 @@ console.log(typeof arr[0])*/
 
 //Обращение через методы
 
-const p = document.querySelectorAll('p')
-for(elem of p){
-        for(let i = 1; i <= p; i++){
-                elem.setAttribute('value', 'i')
-                console.log(elem)
-        }
-}
+//№7 НЕ РЕШИЛ
+// const p = document.querySelectorAll('p')
+// for(let elem of p){
+//         let value = elem.setAttribute('value', '+= 1' )
+//         console.log(value)
+// }
+
+//======Работа с узлами в JavaScript========
+
 
 
