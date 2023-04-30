@@ -6267,7 +6267,7 @@ console.log(typeof arr[0])*/
 
 // elem.previousElementSibling.textContent = 'text4'
  
-// elem.nextElementSibling.textContent = 'text2' 
+// elem.nextElementSibling.textContent = 'text2'
 
 //=====Другие полезные методы для поиска на JavaScript====
 
@@ -6307,7 +6307,7 @@ console.log(typeof arr[0])*/
 // for (let el of elems2){
 //         elem2 += el.textContent
 // }
-// console.log(elem2)     
+// console.log(elem2)
 
 //====Пользовательские атрибуты в JavaScript=====
 
@@ -6335,7 +6335,7 @@ console.log(typeof arr[0])*/
 //         if(input.value.length == input.dataset.length){
 //                 alert('Everething cool')
 //         }
-// })        
+// })
 //==== Задача 5
 // const input = document.querySelector('#elem')
 // input.addEventListener('blur', function(){
@@ -6361,6 +6361,59 @@ console.log(typeof arr[0])*/
 // }
 
 //======Работа с узлами в JavaScript========
+// let elem = document.querySelector('#elem');
+// console.log(elem.firstChild);        // комментарий
+// console.log(elem.firstElementChild); // тег span
+// console.log(elem.lastChild)
+// console.log(elem.lastElementChild)
 
+// let parent = document.querySelector('#parent')
+// console.log(parent.lastChild)
+// console.log(parent.firstElementChild)
 
+//Створення нових елементів HTML - insertBefore()
 
+// const para = document.createElement("p");
+// const node = document.createTextNode("This is new.");
+// para.appendChild(node);
+
+// const element = document.getElementById("div1");
+// element.appendChild(para);
+//===
+
+//Перебор циклом
+
+// const elems = document.querySelector('#elem')
+// for (let elem of elems.childNodes) {
+//         console.log(elem)
+// }
+
+//Название узлов
+
+// const elems = document.querySelector('#elem')
+// for (let elem of elems.childNodes) {
+//         console.log(elem.nodeName)
+// }
+
+//Тип узлов
+
+// const elems = document.querySelector('#elem')
+// for (let elem of elems.childNodes) {
+//         console.log(elem.nodeType)
+// }
+
+//Текст узлов
+// const elems = document.querySelector('#elem')
+// for (let elem of elems.childNodes) {
+//         console.log(elem.nodeValue)
+// }
+
+//=============Советы по написанию кода на примере DOM в JavaScript=======
+
+const elems = document.querySelectorAll('ul li')
+let sum = 0
+for (let elem of elems) {
+        let test = +elem.textContent
+        console.log(test)
+}
+//console.log(sum)
