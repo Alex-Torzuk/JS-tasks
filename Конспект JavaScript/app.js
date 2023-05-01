@@ -6410,10 +6410,55 @@ console.log(typeof arr[0])*/
 
 //=============Советы по написанию кода на примере DOM в JavaScript=======
 
-const elems = document.querySelectorAll('ul li')
-let sum = 0
-for (let elem of elems) {
-        let test = +elem.textContent
-        console.log(test)
-}
-//console.log(sum)
+// const elems = document.querySelectorAll('li')
+// let sum = 0
+// for (let elem of elems) {
+//         let test = elem[0]
+//         console.log(test)
+// }
+
+//====Поиск ошибок в коде с DOM в JavaScript=======
+//Задачки
+
+// const elems = document.querySelectorAll('p')
+// for(let elem of elems){
+//         elem.textContent += 'Hello world'
+// }
+//==
+
+// const elems = document.querySelectorAll('p')
+// for(let elem of elems){
+//         elem.addEventListener('click', function(){
+//                 elem.textContent ++
+//         })
+// }
+//
+// const text = document.querySelector('p')
+// const button = document.querySelector('button')
+
+// button.addEventListener('click', () =>{
+//         text.innerHTML = '<b>text.innerHTML</b>'
+        
+// })
+//
+
+// const elems = document.querySelectorAll('p')
+// const button = document.querySelector('button')
+// let sum = 0
+// for(let elem of elems){
+//         button.addEventListener('click', ()=>{
+//              sum += +elem.textContent
+//          console.log(sum)
+//         }
+//         )
+// }
+
+// let elems = document.querySelectorAll('p');
+
+// for (let elem of elems) {
+// 	elem.addEventListener('click', () => {
+// 		elem.textContent += '!';
+// 	});
+// }
+
+// Задача №8
