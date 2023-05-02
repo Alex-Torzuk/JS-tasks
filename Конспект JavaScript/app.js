@@ -6462,3 +6462,103 @@ console.log(typeof arr[0])*/
 // }
 
 // Задача №8
+
+// const elems = document.querySelectorAll('input')
+// const button = document.querySelector('button')
+// let sum = 0
+
+// for (let elem of elems) {
+//         button.addEventListener('click', () => {
+//                 sum += +elem.value
+//                 console.log(sum)
+//         })
+// }
+
+//9
+// const button = document.querySelector('button')
+// const inp1 = document.getElementById('inp1')
+// const inp2 = document.getElementById('inp2')
+// const inp3 = document.getElementById('inp3')
+// let sum = 0
+
+// button.addEventListener('click', () => {
+//         inp3.value = +inp1.value + +inp2.value
+// })
+//10
+
+// const inp1 = document.getElementById('inp1')
+// const inp2 = document.getElementById('inp2')
+// const res = document.getElementById('res')
+// const button = document.querySelector('button')
+
+// button.addEventListener('click', () => {
+//        res.textContent = +inp1.value + +inp2.value
+// })
+
+//11
+// const elems = document.querySelectorAll('input')
+// const button = document.querySelector('button')
+// button.addEventListener('click', function() {
+// 	for (let input of elems) {
+// 		if (input.dataset.text  == input.value) {
+//                         console.log('right')
+                        
+// 		} else {
+// 			console.log('wrong')
+// 		}
+// 	}
+// });
+//13
+
+// let inp = document.querySelector('#inp');
+
+// inp.addEventListener('blur', function() {
+//         let digits = inp.value.split('');
+//         console.log(digits)
+// 	let sum = 0;
+	
+// 	for (let digit of digits) {
+// 		sum += +digit;
+// 	}
+	
+// 	console.log(sum);
+// });
+
+//============Отработка изученного материала на работу с DOM========
+// 1
+// const input = document.querySelector('input')
+// const p = document.querySelector('p')
+// input.addEventListener('blur', () => {
+//         p.textContent += input.value
+// })
+
+// 2
+// const inputs = document.querySelectorAll('input')
+// const p = document.querySelector('p')
+// const button = document.querySelector('button')
+// let sum = 0
+
+// for (let input of inputs) {
+//         button.addEventListener('click', () => {
+//               p.textContent = sum += +input.value
+//         })
+// }
+
+// 3 - не решил
+
+// const input = document.querySelector('input')
+// let sum = 0
+// input.addEventListener('blur', () => {
+//       input.value = sum += input.value.split('')
+// })
+
+// 4 - не решил
+
+// const input = document.querySelector('input')
+// let sum = 0
+// input.addEventListener('blur', () => {
+//         input.value = sum += input.value.join().split('')
+// })
+
+// 5 - let's run
+
