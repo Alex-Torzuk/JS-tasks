@@ -6461,7 +6461,7 @@ console.log(typeof arr[0])*/
 // 	});
 // }
 
-// Задача №8
+// Задача №8ß
 
 // const elems = document.querySelectorAll('input')
 // const button = document.querySelector('button')
@@ -6562,3 +6562,31 @@ console.log(typeof arr[0])*/
 
 // 5 - let's run
 
+// 5
+
+// const parent = document.querySelector('.parent')
+// const children = document.querySelectorAll('.child')
+// for(let elem of children){
+//         parent.addEventListener('blur', ()=>{
+//                 elem.value = parent.value
+//         })
+// }
+
+// 6
+
+// const input = document.querySelector('input')
+// input.addEventListener('blur', ()=>{
+//         input.value = input.value.toUpperCase()
+// })
+
+// 7
+
+// const input = document.querySelector('input')
+// input.addEventListener('blur', ()=>{
+//         let res = input.value.split(' ')
+//         for (let i = 0; i <= res.length-1; i++){
+//                 console.log(i)
+//         }
+// })
+
+// 8
