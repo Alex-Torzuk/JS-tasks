@@ -6544,13 +6544,19 @@ console.log(typeof arr[0])*/
 //         })
 // }
 
-// 3 - не решил
+// 3 
 
-// const input = document.querySelector('input')
-// let sum = 0
-// input.addEventListener('blur', () => {
-//       input.value = sum += input.value.split('')
-// })
+
+function sumDigits() {
+      const number = document.getElementById('numberInput').value;
+      let sum = 0;
+
+      for (let i = 0; i < number.length; i++) {
+        sum += parseInt(number[i]);
+      }
+
+      document.getElementById('result').textContent = `Сумма цифр: ${sum}`;
+    }
 
 // 4 - не решил
 
@@ -6590,3 +6596,67 @@ console.log(typeof arr[0])*/
 // })
 
 // 8
+
+// const dateInput = document.getElementById('date-input');
+// const convertBtn = document.getElementById('convert-btn');
+
+// convertBtn.addEventListener('click', () => {
+//   const dateStr = dateInput.value;
+//         const dateParts = dateStr.split('.');
+//         console.log(dateParts)
+//         const year = dateParts[2];
+//         console.log(year)
+//         const month = dateParts[1];
+//         console.log(month)
+//         const day = dateParts[0];
+//         console.log(day)
+//   const convertedDateStr = `${year}-${month}-${day}`;
+//   dateInput.value = convertedDateStr;
+// });
+
+// 9 problem
+
+// const input = document.querySelector('input')
+// input.addEventListener('click', () => {
+//         console.log(input.value.split('.'))
+        
+// })
+
+// 10
+
+// const input = document.querySelector('input')
+// input.addEventListener('blur', () => {
+//         if (input.value === '3') {
+//                 input.value = 'Life is good'
+//         }
+// })
+
+// 11
+
+// const elems = document.querySelectorAll('p')
+// const button = document.querySelector('button')
+
+// button.addEventListener('click', function () {
+//         for (let i = 0; i <= elems.length; i++){
+//                 console.log(elems[i].textContent += ' - ' + (i + 1))
+//         }
+// })
+
+// 12
+
+// const linkOne = document.querySelector('.link_1')
+// linkOne.href = 'https://google.com'
+// linkOne.textContent += ' - ' + linkOne.href
+
+// const linkSecond = document.querySelector('.link_2')
+// linkSecond.href = 'https://github.com'
+// linkSecond.textContent += ` - ${linkSecond.href}`
+
+// 13
+
+// const link = document.querySelectorAll('a')
+// for (let lin of link) {
+//         if (lin.href.startsWith('http://')) {
+//                 lin.textContent += ' →'
+//         }
+// }
