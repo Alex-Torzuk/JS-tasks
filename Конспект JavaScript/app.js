@@ -6547,16 +6547,16 @@ console.log(typeof arr[0])*/
 // 3 
 
 
-function sumDigits() {
-      const number = document.getElementById('numberInput').value;
-      let sum = 0;
+// function sumDigits() {
+//       const number = document.getElementById('numberInput').value;
+//       let sum = 0;
 
-      for (let i = 0; i < number.length; i++) {
-        sum += parseInt(number[i]);
-      }
+//       for (let i = 0; i < number.length; i++) {
+//         sum += parseInt(number[i]);
+//       }
 
-      document.getElementById('result').textContent = `Сумма цифр: ${sum}`;
-    }
+//       document.getElementById('result').textContent = `Сумма цифр: ${sum}`;
+//     }
 
 // 4 - не решил
 
@@ -6660,3 +6660,15 @@ function sumDigits() {
 //                 lin.textContent += ' →'
 //         }
 // }
+
+// 14
+
+const elems = document.querySelectorAll('p')
+for (let elem of elems){
+  elem.addEventListener('click', function(){
+    console.log(elem.textContent * 2)
+    
+  })
+}
+
+
