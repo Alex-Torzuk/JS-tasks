@@ -6800,9 +6800,115 @@ console.log(typeof arr[0])*/
 //   }
 // }
 
+//=========Работа с текстареа в JavaScript===========
+
+// let textarea = document.querySelector('#textAr')
+
+// const p = document.querySelector('p')
+
+// textarea.addEventListener('blur', function () {
+//         //const text =
+//         p.textContent = textarea.value
+// })
+
+//=======Атрибут disabled в JavaScript=======
+// const input = document.querySelector('input')
+// const button = document.querySelector('button')
+// button.addEventListener('click', function () {
+//         input.disabled = false
+// })
+//====
+
+// const input = document.querySelector('input')
+// const buttonIn = document.querySelector('.button_in')
+// const buttonOff = document.querySelector('.button_off')
 
 
+// buttonIn.addEventListener('click', function () {
+//         input.disabled = true
+        
+// })
 
+// buttonOff.addEventListener('click', function () {
+//         input.disabled = false
+// })
+//==
 
+// const input = document.querySelector('input')
+// const button = document.querySelector('button')
+// button.addEventListener('click', function () {
+//         if (input.disabled) {
+//                 console.log('Disabled')
+//         }else(console.log('You can touch me'))
+// })
 
+//==========Работа с чекбоксами в JavaScript=======
 
+// let elem = document.querySelector('#elem');
+// console.log(elem.checked);
+
+//
+
+// const input = document.querySelector('input')
+// const buttonIn = document.querySelector('.butIn')
+// const buttonOff = document.querySelector('.butOff')
+// buttonIn.addEventListener('click', function () {
+//         input.checked = true
+// })
+// buttonOff.addEventListener('click', function () {
+//         input.checked = false
+// })
+
+//
+
+// const input = document.querySelector('#input')
+// const button = document.querySelector('button')
+// const p = document.querySelector('p')
+// button.addEventListener('click', function () {
+//         if (input.checked) {
+//                 p.textContent = 'Hello'
+//         } else {
+//                 p.textContent = 'Bye'
+//         }
+// })
+
+//==========Чередование атрибутов без значений=========
+
+//Дан чекбокс и кнопка. Сделайте так, чтобы каждый клик
+//по кнопке приводил к смене состояния чекбокса.
+
+// const input = document.querySelector('#input')
+// const button = document.querySelector('button')
+// button.addEventListener('click', function () {
+//         input.checked = !input.checked
+        
+//         // if (input.checked) {
+//         //         input.checked = false
+//         // } else {
+//         //         input.checked =true
+//         // }
+// })
+
+//======Работа с радиокнопками в JavaScript=======
+
+//Даны 3 радиокнопки, абзац и кнопка. По клику на кнопку
+//выведите в абзац value отмеченной радиокнопки.
+
+// const elems = document.querySelectorAll('input[type="radio"]')
+// const p = document.querySelector('p')
+// const button = document.querySelector('#button')
+// for (let elem of elems) {
+//         button.addEventListener('click', function () {
+//                 if (elem.checked) {
+//                         p.textContent = elem.value
+//                 }
+//         })
+// }
+
+//==========Событие change в JavaScript===========
+
+let elem = document.querySelector('#elem');
+
+elem.addEventListener('change', function() {
+	console.log(this.value);
+});
