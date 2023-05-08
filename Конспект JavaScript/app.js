@@ -6544,7 +6544,7 @@ console.log(typeof arr[0])*/
 //         })
 // }
 
-// 3 
+// 3
 
 
 // function sumDigits() {
@@ -6663,12 +6663,146 @@ console.log(typeof arr[0])*/
 
 // 14
 
-const elems = document.querySelectorAll('p')
-for (let elem of elems){
-  elem.addEventListener('click', function(){
-    console.log(elem.textContent * 2)
+// const elems = document.querySelectorAll('p')
+// for (let elem of elems){
+//   elem.addEventListener('click', function(){
+//     console.log(elem.textContent * 2)
     
-  })
-}
+//   })
+// }
+
+// 15
+
+// const input = document.querySelector('input')
+// let days = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб']
+// input.addEventListener('blur', function () {
+//   let data = input.value.split('.').reverse().join(',')
+//   console.log(data)
+//   let day = new Date(data)
+//   console.log(day)
+//   let dayGet =day.getDay()
+//   console.log(days[dayGet])
+// })
+
+// 16
+
+// const input = document.querySelector('input')
+// const buttonPlus = document.querySelector('.buttonPlus')
+// buttonPlus.style.background = 'red'
+// buttonPlus.style.borderRadius = '5px'
+
+// buttonPlus.addEventListener('click', function () {
+//   input.value ++
+// })
+
+// const buttonMinus = document.querySelector('.buttonMinus')
+// buttonMinus.style.color = 'blue'
+// buttonMinus.style.background = 'yellow'
+// buttonMinus.addEventListener('click', function () {
+//   if (input.value > 0) {
+//     input.value --
+//   }
+// })
+
+// 17
+
+// const input = document.querySelector('input')
+// const elems = document.querySelectorAll('p')
+
+// for (let elem of elems) [
+//   elem.addEventListener('click', function () {
+//     input.value++
+//   })
+// ]
+
+// 18
+
+// const elems = document.querySelectorAll('div')
+// elems.forEach(div => {
+//   const text = div.textContent;
+//   if (text.length > 10) {
+//     const newText = text.slice(0, 10) + '...';
+//     div.textContent = newText;
+//   }
+// });
+
+// for (let elem of elems) {
+//   const text = elem.textContent
+//   if (text.length > 10) {
+//     const newText = text.slice(0, 10) + '...'
+//     elem.textContent = newText
+//   }
+// }
+
+// 19
+
+// const input = document.querySelector('input')
+// input.addEventListener('blur', function () {
+//   if (input.value > 0 && input.value < 100) {
+//     input.style.background = 'green'
+//   } else {
+//     input.style.background = 'red'
+//   }
+// })
+
+// 20
+// const input = document.getElementById('random-string');
+// const generateBtn = document.getElementById('generate-btn');
+
+// function generateRandomString(length) {
+//   let result = '';
+//   const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+//   for (let i = 0; i < length; i++) {
+//     result += characters.charAt(Math.floor(Math.random() * characters.length));
+//   }
+//   return result;
+// }
+
+// generateBtn.addEventListener('click', function() {
+//   const randomString = generateRandomString(8);
+//   input.value = randomString;
+// });
+
+// 21 = чат бот
+
+// function shuffle() {
+//   const input = document.getElementById('input');
+//   const value = input.value;
+//   const chars = value.split('');
+//   for (let i = chars.length - 1; i > 0; i--) {
+//     const j = Math.floor(Math.random() * (i + 1));
+//     [chars[i], chars[j]] = [chars[j], chars[i]];
+//   }
+//   const shuffled = chars.join('');
+//   input.value = shuffled;
+// }
+
+// 22 = чат бот
+
+// function convertTemperature() {
+//   // Получаем элементы
+//   const input = document.getElementById('fahrenheit');
+//   const result = document.getElementById('result');
+  
+//   // Получаем значение из инпута
+//   const fahrenheit = parseFloat(input.value);
+  
+//   // Проверяем, что значение является числом
+//   if (!isNaN(fahrenheit)) {
+//     // Вычисляем значение в градусах Цельсия
+//     const celsius = (fahrenheit - 32) * 5/9;
+    
+//     // Выводим результат в абзац
+//     result.textContent = celsius.toFixed(2) + ' °C';
+//   } else {
+//     // Выводим сообщение об ошибке
+//     result.textContent = 'Please enter a valid temperature.';
+//   }
+// }
+
+
+
+
+
 
 
