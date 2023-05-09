@@ -6907,8 +6907,65 @@ console.log(typeof arr[0])*/
 
 //==========Событие change в JavaScript===========
 
-let elem = document.querySelector('#elem');
+// let elem = document.querySelector('#elem');
 
-elem.addEventListener('change', function() {
-	console.log(this.value);
-});
+// elem.addEventListener('change', function() {
+// 	console.log(this.value);
+// });
+
+//Дан инпут и абзац. По изменению инпута выведите его 
+//текст в абзац.
+
+// const input= document.querySelector('input')
+// const p = document.querySelector('p')
+// input.addEventListener('change', function(){
+//         p.textContent = input.value
+// })
+
+//Дан чекбокс. По изменению чебокса выведите на 
+//экран его новое состояние.
+
+// const input = document.querySelector('#input')
+// input.addEventListener('change', function(){
+//         if(input.checked){
+//                 console.log('Yes')
+//         }else{
+//                 console.log('No')
+//         }
+// })
+
+//
+
+// const input = document.querySelector('#input')
+// input.addEventListener('change', function(){
+//         if(input.value.length-1 < 5){
+//                 input.style.borderColor = 'green'
+//         }else{
+//                 input.style.borderColor = 'red'
+//         }
+// })
+
+//===========Событие input в JavaScript========
+
+// let elem = document.querySelector('#elem');
+
+// elem.addEventListener('input', function() {
+// 	if(elem.value.length-1 == 5){
+//                 alert('Stop')
+//         }
+// });
+
+// Chat gpt
+// const input = document.querySelector('input');
+//   const p = document.querySelector('p');
+
+//   input.addEventListener('input', function() {
+//     const remainingChars = 5 - this.value.length;
+//     if (remainingChars >= 0) {
+//       p.textContent = `Осталось ввести ${remainingChars} символов`;
+//     } else {
+//       p.textContent = `Превышено на ${Math.abs(remainingChars)} символов`;
+//     }
+//   });
+
+//========Методы focus и blur в JavaScript=========
