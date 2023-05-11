@@ -6913,7 +6913,7 @@ console.log(typeof arr[0])*/
 // 	console.log(this.value);
 // });
 
-//Дан инпут и абзац. По изменению инпута выведите его 
+//Дан инпут и абзац. По изменению инпута выведите его
 //текст в абзац.
 
 // const input= document.querySelector('input')
@@ -6922,7 +6922,7 @@ console.log(typeof arr[0])*/
 //         p.textContent = input.value
 // })
 
-//Дан чекбокс. По изменению чебокса выведите на 
+//Дан чекбокс. По изменению чебокса выведите на
 //экран его новое состояние.
 
 // const input = document.querySelector('#input')
@@ -6969,3 +6969,20 @@ console.log(typeof arr[0])*/
 //   });
 
 //========Методы focus и blur в JavaScript=========
+
+// let elem = document.querySelector('#elem');
+// let button = document.querySelector('#button');
+
+// button.addEventListener('click', function() {
+// 	elem.focus();
+// });
+
+//Даны два инпута. Сделайте так, чтобы после ввода двух символов
+//фокус ввода переходил ко второму инпуту, а после ввода двух
+//символов в этот инпут - фокус из него убирался.
+
+const inp_1 = document.querySelector('.inpFirst')
+const inp_2 = document.querySelector('.inpSecond')
+inp_1.addEventListener('change', function () {
+        console.log(inp_1.value)
+})
