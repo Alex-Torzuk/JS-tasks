@@ -6981,8 +6981,23 @@ console.log(typeof arr[0])*/
 //фокус ввода переходил ко второму инпуту, а после ввода двух
 //символов в этот инпут - фокус из него убирался.
 
-const inp_1 = document.querySelector('.inpFirst')
-const inp_2 = document.querySelector('.inpSecond')
-inp_1.addEventListener('change', function () {
-        console.log(inp_1.value)
-})
+// const inp_1 = document.querySelector('.inpFirst')
+// const inp_2 = document.querySelector('.inpSecond')
+// inp_1.addEventListener('input', function () {
+//         if(inp_1.value.length >= 2){
+//                 inp_2.focus()
+               
+//         }
+        
+// })
+
+// inp_2.addEventListener('input', function () {
+//         if(inp_2.value.length >= 2){
+//                 inp_2.blur()
+               
+//         }
+        
+// })
+
+//======Работа с выпадающими списками в JavaScript=====
+
