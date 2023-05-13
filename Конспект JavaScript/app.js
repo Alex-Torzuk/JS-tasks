@@ -7001,3 +7001,146 @@ console.log(typeof arr[0])*/
 
 //======Работа с выпадающими списками в JavaScript=====
 
+// let select = document.querySelector('#select');
+// select.addEventListener('change', function(){
+// 	console.log(this.value);
+// });
+
+//Дан селект, абзац и кнопка. По клику на кнопку выведите текст
+//выбранного пункта списка в абзац.
+
+// const select = document.querySelector('#select')
+// const p = document.querySelector('p')
+// const button = document.querySelector('button')
+
+// button.addEventListener('click', function () {
+//         p.textContent = select.value
+// })
+
+//Атрибут value
+
+// select.addEventListener('change', function(){
+// 	console.log(this.value);
+// });
+
+//==Изменение выбранного пункта списка на JavaScript====
+
+// let select = document.querySelector('#select');
+// let button = document.querySelector('#button');
+// button.addEventListener('click', function() {
+// 	select.value = 'one';
+// });
+
+//Сделайте выпадающий список с названиями месяцев. Сделайте так,
+//чтобы JavaScript по умолчанию выбирал в этом списке текущий месяц.
+
+//Номер выбранного пункта выпадающего списка
+
+//Дан инпут и селект. В инпут вводится какое-то число. По потери фокуса
+//сделайте выделенным пункт списка, номер которого равен значению
+//из инпута.
+
+// const input = document.querySelector('input')
+// const select = document.querySelector('#select')
+// input.addEventListener('blur', function () {
+//          select.selectedIndex = input.value
+// })
+
+//===Получение пунктов выпадающего списка на JavaScript=====
+
+//Переберите все пункты списка циклом и в конец текста каждого пункта
+//добавьте значение его атрибута value.
+
+// const select = document.querySelector('#select')
+// for (let elem of select) {
+//         elem.textContent += elem.value
+// }
+
+//=====Работа с пунктами выпадающего списка на JavaScript=====
+
+// let select = document.querySelector('#select');
+// let option = select[0];
+// console.log(option.text);
+// console.log(option.value);
+// console.log(option.selected);
+
+//Переберите пункты списка циклом и для выбранного пункта в конец
+//текста добавьте восклицательный знак, а для невыбранных пунктов -
+//вопросительный.
+
+// const select = document.querySelector('#select')
+// for (let elem of select) {
+//         if (elem.selected) {
+//                 elem.textContent += '!'
+//         } else {
+//                 elem.textContent += '?'
+//         }
+// }
+
+//Выбор пункта списка
+
+//Дан выпадающий список и кнопка. По клику на кнопку сделайте
+//отмеченным последний пункт списка.
+
+// const select = document.querySelector('#select')
+// const button = document.querySelector('button')
+// let option = select[2]
+// button.addEventListener('click', function () {
+//         option.selected = true
+// })
+
+//Получение выбранного оптиона
+
+// let select = document.querySelector('#select');
+// console.log(select[select.selectedIndex]);
+
+//Дан селект и кнопка. По нажатию на кнопку выведите на экран
+//текст отмеченного пункта списка.
+
+// const select = document.querySelector('#select')
+// const button = document.querySelector('button')
+
+// button.addEventListener('click', function () {
+//         console.log(select[select.selectedIndex].textContent)
+// })
+
+// const select = document.querySelector('#select')
+// const button = document.querySelector('button')
+// button.addEventListener('click', function () {
+//         select[select.selectedIndex].textContent += '!'
+// })
+
+//==========Поиск ошибок в коде с формами в JavaScript========
+
+//1
+// let textarea = document.querySelector('textarea');
+// let div = document.querySelector('div');
+
+// textarea.addEventListener('blur', function() {
+// 	div.textContent += textarea.value;
+// });
+
+//2
+// let checkbox = document.querySelector('input');
+// let button = document.querySelector('button');
+// let div = document.querySelector('div');
+
+// button.addEventListener('click', function() {
+// 	if (checkbox.checked) {
+// 		div.textContent += '111';
+// 	} else {
+// 		div.textContent += '222';
+// 	}
+// });
+
+//3
+// let checkbox = document.querySelector('input');
+// let button = document.querySelector('button');
+
+// button.addEventListener('click', function() {
+// 	if (checkbox.checked) {
+// 		console.log('+++');
+// 	} else {
+// 		console.log('---');
+// 	}
+// });

@@ -424,9 +424,133 @@
 <input type="submit" id="button"> -->
 <!-- <input class="inpFirst" type="text">
 <input class="inpSecond" type="text"> -->
+<!-- <select id="select">
+    <option>one</option>
+    <option>two</option>
+    <option>three</option>
+</select>
+<p></p>
+<button>Hello everybody</button> -->
+<!-- <select id="select">
+    <option value="1">one</option>
+    <option value="2" selected>two</option>
+    <option value="3">three</option>
+</select> -->
+<!-- <select id="dayOfWeek">
+    <option value="1">Понедельник</option>
+    <option value="2">Вторник</option>
+    <option value="3">Среда</option>
+    <option value="4">Четверг</option>
+    <option value="5">Пятница</option>
+    <option value="6">Суббота</option>
+    <option value="7">Воскресенье</option>
+</select>
+<p id="result"></p>
 
+<script>
+    const select = document.getElementById('dayOfWeek');
+    const result = document.getElementById('result');
 
+    select.addEventListener('change', function () {
+        const selectedValue = parseInt(this.value);
+        if (selectedValue >= 6) {
+            result.textContent = 'Выбран выходной день';
+        } else {
+            result.textContent = 'Выбран рабочий день';
+        }
+    });
+</script> -->
+<!-- <select id="select">
+    <option value="one">один</option>
+    <option value="two" selected>два</option>
+    <option value="three">три</option>
+</select>
+<input type="submit" id="button"> -->
 
+<!-- <select id="monthSelect"></select>
+
+<script>
+    const monthSelect = document.getElementById('monthSelect');
+
+    // Получаем текущий месяц
+    const currentMonth = new Date().getMonth();
+
+    // Массив с названиями месяцев
+    const months = [
+        'Январь',
+        'Февраль',
+        'Март',
+        'Апрель',
+        'Май',
+        'Июнь',
+        'Июль',
+        'Август',
+        'Сентябрь',
+        'Октябрь',
+        'Ноябрь',
+        'Декабрь'
+    ];
+
+    // Генерируем опции списка с названиями месяцев
+    for (let i = 0; i < months.length; i++) {
+        const option = document.createElement('option');
+        option.value = i + 1;
+        option.textContent = months[i];
+        monthSelect.appendChild(option);
+    }
+
+    // Устанавливаем текущий месяц в списке
+    monthSelect.value = currentMonth + 1;
+</script> -->
+<!-- <input type="text">
+<select id="select">
+    <option value="one">один</option>
+    <option value="two" selected>два</option>
+    <option value="three">три</option>
+</select> -->
+<!-- <select id="daySelect"></select>
+
+<script>
+    const daySelect = document.getElementById('daySelect');
+
+    // Получаем текущий день недели (от 0 до 6, где 0 - воскресенье)
+    const currentDay = new Date().getDay();
+
+    // Массив с названиями дней недели
+    const daysOfWeek = [
+        'Воскресенье',
+        'Понедельник',
+        'Вторник',
+        'Среда',
+        'Четверг',
+        'Пятница',
+        'Суббота'
+    ];
+
+    // Генерируем опции списка с названиями дней недели
+    for (let i = 0; i < daysOfWeek.length; i++) {
+        const option = document.createElement('option');
+        option.value = i;
+        option.textContent = daysOfWeek[i];
+        daySelect.appendChild(option);
+    }
+
+    // Устанавливаем текущий день недели в списке
+    daySelect.value = currentDay;
+</script> -->
+<!-- <select id="select">
+    <option value="one">один</option>
+    <option value="two" selected>два</option>
+    <option value="three">три</option>
+</select> 
+<button>BUTTON</button> -->
+<!-- <textarea></textarea>
+<div></div> -->
+<!-- <input type="checkbox">
+<div></div>
+<button>button</button> -->
+<input type="checkbox" checked>
+<button>button</button>
 
 
 
