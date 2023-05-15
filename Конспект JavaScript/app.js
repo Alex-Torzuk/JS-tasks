@@ -7144,3 +7144,18 @@ console.log(typeof arr[0])*/
 // 		console.log('---');
 // 	}
 // });
+
+//=======Основы работы с объектом Event в JavaScript=====
+
+// let elem = document.querySelector('#elem');
+
+// elem.addEventListener('click', function(event) {
+//         console.log(event); // увидим объект с событием
+// });
+
+//Координаты события в JavaScript
+
+const elem = document.querySelector('#elem')
+elem.addEventListener('mousemove', function (event) {
+        elem.textContent = event.clientX + ' : ' + event.clientY
+})
