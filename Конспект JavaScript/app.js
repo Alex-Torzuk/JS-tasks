@@ -7155,7 +7155,145 @@ console.log(typeof arr[0])*/
 
 //Координаты события в JavaScript
 
-const elem = document.querySelector('#elem')
-elem.addEventListener('mousemove', function (event) {
-        elem.textContent = event.clientX + ' : ' + event.clientY
-})
+// const elem = document.querySelector('#elem')
+// elem.addEventListener('mousemove', function (event) {
+//         elem.textContent = event.clientX + ' : ' + event.clientY
+// })
+
+//Тип события в объекте Event в JavaScript
+
+// let elem = document.querySelector('#elem');
+
+// elem.addEventListener('click', func);
+// elem.addEventListener('dblclick', func);
+
+// function func() {
+//         console.log(event.type)
+//         if (event.type === 'click') {
+//                 elem.style.background = 'green'
+//         } else if(event.type === 'dblclick') {
+//                 elem.style.background = 'red'
+//         }
+// }
+
+// Элемент события в объекте Event в JavaScript
+
+// let elem = document.querySelector('#elem');
+
+// elem.addEventListener('click', function(event) {
+// 	console.log(event.target); // выведет наш абзац
+// 	console.log(this);         // выведет наш див
+// });
+
+//
+
+// const elems = document.querySelector('ul')
+
+//         elems.addEventListener('click', function () {
+//                 console.log(this.tagName)
+//                 console.log(event.target.tagName)
+//         })
+
+// Получение нажатых клавиш в JavaScript
+// let elem = document.querySelector('input');
+// elem.addEventListener('keypress', function(event) {
+// 	console.log(event.key);
+// });
+// elem.addEventListener('keypress', function(event) {
+// 	console.log(event.code);
+// });
+
+//Дан абзац и инпут. В него вводится текст и нажимается клавиша Enter.
+//Сделайте так, чтобы в этот момент введенный текст попадал в абзац
+//под инпутом, а содержимое инпута очищалось.
+
+// const input = document.querySelector('input')
+// const p = document.querySelector('p')
+
+// input.addEventListener('keypress', function (event) {
+//         if (event.key === 'Enter') {
+//                 p.textContent = input.value
+//                 input.value = ''
+//         }
+// })
+
+// Отслеживание клавиш-модификаторов в JavaScript
+
+// let elem = document.querySelector('#elem');
+
+// elem.addEventListener('click', function(event) {
+// 	if (event.ctrlKey) {
+// 		console.log('нажат Ctrl');
+// 	}
+	
+// 	if (event.altKey) {
+// 		console.log('нажат Alt');
+// 	}
+	
+// 	if (event.shiftKey) {
+// 		console.log('нажат Shift');
+// 	}
+// });
+
+// Дан элемент. Сделайте так, чтобы по клику на него он красился
+// в красный цвет, но только если в момент клика нажата клавиша Alt.
+
+// const elem = document.querySelector('p')
+// elem.addEventListener('click', function () {
+//         if (event.altKey) {
+//                 elem.style.color = 'red'
+//         }
+// })
+
+//Сделайте так, чтобы по клику на любую li, в конец ее текста
+//добавлялось число 1, если нажата клавиша Ctrl, и число 2, если
+//нажата клавиша Shift.
+
+// const elems = document.querySelectorAll('li')
+// for (let elem of elems) {
+//         elem.addEventListener('click', function () {
+//                 if (event.ctrlKey) {
+//                         elem.textContent += 1
+//                 }else if (event.shiftKey) {
+//                 elem.textContent += 2
+//         }
+//         })
+// }
+
+// Отмена действия по умолчанию в JavaScript
+// let elem = document.querySelector('#elem');
+
+// elem.addEventListener('click', function(event) {
+// 	event.preventDefault();
+// 	console.log('Вы не можете перейти по этой ссылке!');
+// });
+
+//Даны ссылки. Сделайте так, чтобы по клику на ссылку ей в конец
+//записывался ее href, а перехода по ссылке не происходило.
+
+// const elem = document.querySelector('#elem')
+// elem.addEventListener('click', function () {
+//         elem.textContent += elem.href
+//         event.preventDefault()
+// })
+
+// Даны два инпута, абзац и ссылка. Пусть в инпуты вводятся числа.
+// Сделайте так, чтобы по клику на ссылку в абзац записалась сумма
+// введенных чисел.
+
+// const input_1 = document.querySelector('.input_1')
+// const input_2 = document.querySelector('.input_2')
+// const p = document.querySelector('p')
+// const elem = document.querySelector('#elem')
+// let sum = 0
+
+// elem.addEventListener('click', function () {
+//         let inputs = +input_1.value + +input_2.value
+//         sum += inputs
+//         p.textContent += sum
+//         event.preventDefault()
+        
+// })
+
+// Всплытие событий в JavaScript
+

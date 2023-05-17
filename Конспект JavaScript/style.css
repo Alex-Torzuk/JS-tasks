@@ -4,7 +4,7 @@ body {
 }
 
 
-.services  {
+/* .services  {
     width: 100%;
     text-align: center;
 }
@@ -27,8 +27,19 @@ margin-right: 100px;
 
 #button1,  #button2{
     display: block;
+} */
+
+/* .colored {
+    color: green;
+} */
+
+ul {
+    padding: 30px;
+    border: 1px solid red;
 }
 
-.colored {
-    color: green;
+li {
+    list-style-type: none;
+    margin-bottom: 20px;
+    border: 1px dashed black;
 }
