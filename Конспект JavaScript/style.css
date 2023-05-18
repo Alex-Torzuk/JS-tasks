@@ -33,7 +33,7 @@ margin-right: 100px;
     color: green;
 } */
 
-ul {
+/* ul {
     padding: 30px;
     border: 1px solid red;
 }
@@ -42,4 +42,22 @@ li {
     list-style-type: none;
     margin-bottom: 20px;
     border: 1px dashed black;
+} */
+
+/* #elem1{
+    border: 20px solid green;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
 }
+#elem2{
+    border: 20px solid blue;
+    width: 60px;
+    height: 60px;
+}
+#elem3{
+    border: 20px solid red;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+} */
