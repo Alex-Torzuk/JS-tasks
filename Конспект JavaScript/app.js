@@ -7312,3 +7312,23 @@ console.log(typeof arr[0])*/
 // });
 
 // Получение целевого элемента при всплытии событий
+
+// let div = document.querySelector('div');
+// div.addEventListener('click', function() {
+// 	console.log(event.target);
+// });
+
+//
+// const elems = document.querySelector('div')
+// elems.addEventListener('click', function (event) {
+//         if (event.target.matches('div')) {
+// 		console.log('клик именно по диву');
+//         }
+//         if (event.target.matches('ul')) {
+//                 console.log('клик именно по ul')
+//         }
+//         if (event.target.matches('li')) {
+                
+//                 console.log('клик именно по li')
+//         }
+// })

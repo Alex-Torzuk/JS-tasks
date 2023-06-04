@@ -584,6 +584,42 @@
 		<div id="elem3"></div>
 	</div>
 </div> -->
+<!-- <div>
+    <p></p>
+</div> -->
+
+<!-- <div>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</div> -->
+
+<div id="myDiv">
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+</div>
+
+<script>
+    const myDiv = document.getElementById('myDiv');
+
+    myDiv.addEventListener('click', function (event) {
+        const targetElement = event.target;
+
+        if (targetElement.tagName === 'LI') {
+            targetElement.textContent += '!';
+        } else if (targetElement.tagName === 'UL') {
+            const newLi = document.createElement('li');
+            newLi.textContent = 'New item';
+            targetElement.appendChild(newLi);
+        }
+    });
+</script>
+
 
 
 
